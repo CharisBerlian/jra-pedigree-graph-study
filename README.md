@@ -3,7 +3,7 @@
 Research data: [charischerw/jra-pedigree-graph-study-2010-2025](https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025) (paper release v1).
 Code and manuscript: [https://github.com/CharisBerlian/jra-pedigree-graph-study](https://github.com/CharisBerlian/jra-pedigree-graph-study).
 
-Current paper: [v1.0.2-paper](https://github.com/CharisBerlian/jra-pedigree-graph-study/releases/tag/v1.0.2-paper), five A4 pages. Figure 2 is beside the historical results on page 4; references are in first-citation order. The [manuscript review](docs/MANUSCRIPT_REVIEW.md) records changes, numerical checks and remaining boundaries.
+Current paper: [v1.0.3-paper](https://github.com/CharisBerlian/jra-pedigree-graph-study/releases/tag/v1.0.3-paper), five A4 pages, with the user-supplied Charis Berlian author block and Bina Nusantara University affiliation. Figure 2 is beside the historical results on page 4; references are in first-citation order. The [manuscript review](docs/MANUSCRIPT_REVIEW.md) and [author-update checks](docs/AUTHOR_DETAILS_CHECKS.json) record changes, verification and remaining boundaries.
 
 This release contains the historical experiment and the October 2026 focused four-arm study. The fixed title is retained. The four-arm comparisons use H, Gmixed, Gancestor and P, with no market predictors. Historical market comparisons use retrospectively recorded final odds/popularity. The test cohort had previously been examined, so the new comparisons are exploratory.
 

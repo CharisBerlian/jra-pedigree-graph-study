@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "paper_release": "v1.0.3-paper",
+  "author": "Charis Berlian",
+  "affiliation": [
+    "Computer Science Department",
+    "School of Computer Science",
+    "Bina Nusantara University",
+    "Jakarta, Indonesia"
+  ],
+  "email": "charis.berlian@binus.ac.id",
+  "details_source": "Exact user-supplied details, with name capitalization standardized.",
+  "pages": 5,
+  "all_five_pages_rendered_and_visually_checked": true,
+  "all_author_details_verified_in_pdf": true,
+  "dataset_and_code_urls_verified_in_final_page": true,
+  "figure_2_on_page": 4,
+  "references_on_page": 5,
+  "all_18_citation_bindings_in_first_citation_order": true,
+  "overfull_boxes_or_undefined_references": false,
+  "all_fonts_embedded": true,
+  "source_change_scope": "Author block, last-page reference balancing, and paper-release identifier only.",
+  "other_tracked_paper_files_byte_unchanged": 19,
+  "scientific_text_and_table_figure_data_unchanged": true,
+  "pdf_sha256": "41090d2fd78fe0cd8f32b02f2ab93fedef7bde4ef071a3305be4c1f958f545c8"
+}
