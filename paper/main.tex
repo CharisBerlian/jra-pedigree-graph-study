@@ -16,6 +16,11 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
 \usepackage{url}
+% Compact float spacing; retain the IEEE text size and page geometry.
+\setlength{\textfloatsep}{9pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{9pt plus 2pt minus 2pt}
+\setlength{\floatsep}{7pt plus 2pt minus 2pt}
+\setlength{\dblfloatsep}{7pt plus 2pt minus 2pt}
 \begin{document}
 \title{Evaluating Pedigree Graph Features Beyond Recent Form and Market Information in Horse Racing}
 \author{}
@@ -31,5 +36,8 @@ graph embedding, horse racing, Node2Vec, pedigree, predictive modeling
 \input{sections/focused_introduction.tex}
 \input{sections/focused_methods.tex}
 \input{sections/focused_results.tex}
+% Keep the reference heading and entries together after the pending wide figure.
+\newpage
+\IEEEtriggeratref{11}
 \input{references.tex}
 \end{document}

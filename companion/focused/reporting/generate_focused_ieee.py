@@ -157,18 +157,28 @@ def validate(report, payloads):
 
 
 def table(arms):
-    lines = [r'\begin{table*}[!t]', r'\caption{Four-arm test scores across the three fitted seeds}',
-             r'\label{tab:focused_scores}', r'\centering', r'\begin{tabular}{lllcc}', r'\hline',
-             r'Surface & Family & Arm & AP & Hit@3 \\', r'\hline']
-    for surface, family, arm in itertools.product(SURFACES, FAMILIES, ARMS):
-        row = arms[surface, family, arm]
-        ap = f"{float(row['ap_mean']):.4f} $\\pm$ {float(row['ap_seed_sd']):.4f}"
-        hit = f"{float(row['hit_mean']):.4f} $\\pm$ {float(row['hit_seed_sd']):.4f}"
-        lines.append(f'{surface.title()} & {FAMILY_LABELS[family]} & {ARM_LABELS[arm]} & {ap} & {hit} ' + r'\\')
-    lines += [r'\hline', r'\end{tabular}',
-              r'\par\smallskip Scores are fractions, shown as mean $\pm$ sample SD across three paired seeds. '
-              r'The test was previously examined. Cohort denominators are in Table~\ref{tab:cohort}; '
-              r'graph coverage and parent-summary availability are in Table~\ref{tab:focused_coverage}.',
+    lines = [r'\begin{table*}[!t]', r'\caption{Four-arm test performance}',
+             r'\label{tab:focused_scores}', r'\centering', r'\footnotesize',
+             r'\setlength{\tabcolsep}{3pt}', r'\renewcommand{\arraystretch}{1.12}',
+             r'\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llcccc@{}}', r'\hline',
+             r'& & \multicolumn{2}{c}{Turf} & \multicolumn{2}{c}{Dirt} \\',
+             r'\cline{3-4}\cline{5-6}',
+             r'Family & Arm & AP & Hit@3 & AP & Hit@3 \\', r'\hline']
+    for family in FAMILIES:
+        for index, arm in enumerate(ARMS):
+            values = []
+            for surface in SURFACES:
+                row = arms[surface, family, arm]
+                values += [f"{float(row[mean]):.4f} $\\pm$ {float(row[sd]):.4f}"
+                           for mean, sd in (('ap_mean', 'ap_seed_sd'), ('hit_mean', 'hit_seed_sd'))]
+            family_label = FAMILY_LABELS[family] if index == 0 else ''
+            lines.append(f'{family_label} & {ARM_LABELS[arm]} & ' + ' & '.join(values) + r' \\')
+        lines.append(r'\hline')
+    lines += [r'\end{tabular*}',
+              r'\par\smallskip\begin{minipage}{\textwidth}\footnotesize\raggedright '
+              r'Mean $\pm$ sample SD across three paired seeds. Scores are fractions; '
+              r'the test was previously examined. Cohort/coverage: '
+              r'Tables~\ref{tab:cohort} and \ref{tab:focused_coverage}.\end{minipage}',
               r'\end{table*}', '']
     return '\n'.join(lines)
 

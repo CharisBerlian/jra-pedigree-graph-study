@@ -7,7 +7,8 @@ This release contains the historical experiment and the October 2026 focused fou
 
 ## Contents
 
-- `paper/`: current six-page IEEE manuscript and its LaTeX sources, figures and licensed fonts.
+- `paper/`: current five-page IEEE manuscript and its LaTeX sources, figures and licensed fonts.
+- `docs/TABLE_LAYOUT_CHECKS.json`: numerical parity checks for the compact table layout in v1.0.1-paper.
 - `companion/focused/`: all 96 validation candidates, 24 selections, 72 test seed scores, 24 arm summaries and 36 AP/Hit@3 contrasts; frozen scientific source and synthetic fixtures.
 - `companion/historical/`: historical aggregate results, source and reporting generators.
 - `kaggle/`: historical graph, training, inference, evaluation and test sources.

@@ -20,24 +20,30 @@ def main():
     values = {(r['setting'], r['family'], r['surface']): r for r in rows}
     if len(rows) != 60 or len(values) != 60:
         raise ValueError('historical score table is incomplete or duplicated')
-    lines = [r'\begin{table*}[!t]',
-             r'\caption{Historical Market-Information Scores Across All Families and Surfaces}',
-             r'\label{tab:historical_market}', r'\centering', r'\begin{tabular}{llrrrrrr}',
-             r'\hline', r'& & \multicolumn{3}{c}{Entry AP} & \multicolumn{3}{c}{Mean Hit@3} \\',
-             r'Family & Surface & D & E & F & D & E & F \\', r'\hline']
-    for family in FAMILIES:
-        for surface in SURFACES:
+    lines = [r'\begin{table}[!t]',
+             r'\caption{Historical market-information scores}',
+             r'\label{tab:historical_market}', r'\centering', r'\footnotesize',
+             r'\setlength{\tabcolsep}{2pt}', r'\renewcommand{\arraystretch}{1.12}',
+             r'\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrrrrr@{}}',
+             r'\hline', r'& \multicolumn{3}{c}{AP} & \multicolumn{3}{c}{Hit@3} \\',
+             r'\cline{2-4}\cline{5-7}',
+             r'Family & D & E & F & D & E & F \\', r'\hline']
+    for surface in SURFACES:
+        lines.append(r'\multicolumn{7}{@{}l}{\textit{' + surface.title() + r'}} \\')
+        for family in FAMILIES:
             nums = [float(values[setting, family, surface][metric])
                     for metric in ('entry_average_precision_mean', 'race_mean_hit_at_3_mean')
                     for setting in SETTINGS]
             if not all(0 <= n <= 1 for n in nums):
                 raise ValueError('invalid historical score')
-            lines.append(f'{LABELS[family]} & {surface.title()} & ' + ' & '.join(f'{n:.4f}' for n in nums) + r' \\')
-    lines += [r'\hline', r'\end{tabular}',
-              r'\par\smallskip Historical three-seed means: D adds final odds and popularity to history; '
-              r'E adds them to the original graph pipeline; F uses final odds alone. '
-              r'The market fields are retrospective and are not inputs in the new four-arm study.',
-              r'\end{table*}', '']
+            lines.append(f'{LABELS[family]} & ' + ' & '.join(f'{n:.4f}' for n in nums) + r' \\')
+        lines.append(r'\hline')
+    lines += [r'\end{tabular*}',
+              r'\par\smallskip\begin{minipage}{\columnwidth}\footnotesize\raggedright '
+              r'Three-seed means. D: history plus final odds and popularity; E: original graph pipeline '
+              r'plus those market fields; F: final odds only. Market fields are retrospective and '
+              r'absent from the new four arms.\end{minipage}',
+              r'\end{table}', '']
     if a.out.exists():
         raise FileExistsError('preserving existing output')
     a.out.write_text('\n'.join(lines), encoding='utf-8')

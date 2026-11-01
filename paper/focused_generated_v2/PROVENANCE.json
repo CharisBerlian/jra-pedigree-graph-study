@@ -1,0 +1,10 @@
+{
+  "evaluation_report_sha256": "ab80c5ddfaad55f7348afb03aebdf1d2312a43fdf710e895a92ee1fed749caa7",
+  "generator_sha256": "8a148fedac27b4986046daf0d63fa4b98db59d362d8e71fe01fec7ab7a5b183c",
+  "input_sha256": {
+    "arm_metrics.csv": "d435ae23013a943ca6a4f0c3d56ad191dcdedf3fe347278c649da04d851b1e39",
+    "contrasts.csv": "bb215074a996fe8a7445e0cc6ef9a1d302f549eec30d114cf5e8f53e9eb9a46c",
+    "seed_metrics.csv": "6ebfdc438d718376f303b1b28aab73f432939e1c54e3986869ca67da19bf82a0"
+  },
+  "note": "Hash agreement is not an independent scientific audit or authorization."
+}
