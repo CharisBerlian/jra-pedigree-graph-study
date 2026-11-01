@@ -1,0 +1,230 @@
+[
+  {
+    "doi": "10.1145/2939672.2939754",
+    "status": "retrieved",
+    "title": [
+      "node2vec"
+    ],
+    "container": [
+      "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining"
+    ],
+    "authors": [
+      {
+        "given": "Aditya",
+        "family": "Grover"
+      },
+      {
+        "given": "Jure",
+        "family": "Leskovec"
+      }
+    ],
+    "year": [
+      [
+        2016,
+        8,
+        13
+      ]
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "855-864",
+    "article_number": null
+  },
+  {
+    "doi": "10.5750/jpm.v7i1.595",
+    "status": "not_retrieved",
+    "error": "HTTPError"
+  },
+  {
+    "doi": "10.5120/12493-9048",
+    "status": "retrieved",
+    "title": [
+      "Horse Racing Prediction at the Champ De Mars using a Weighted Probabilistic Approach"
+    ],
+    "container": [
+      "International Journal of Computer Applications"
+    ],
+    "authors": [
+      {
+        "given": "Sameerchand",
+        "family": "Pudaruth"
+      },
+      {
+        "given": "Nicolas",
+        "family": "Medard"
+      },
+      {
+        "given": "Zaynah",
+        "family": "Bibi Dookhun"
+      }
+    ],
+    "year": [
+      [
+        2013,
+        6,
+        26
+      ]
+    ],
+    "volume": "72",
+    "issue": "5",
+    "page": "37-42",
+    "article_number": null
+  },
+  {
+    "doi": "10.1146/annurev-animal-020420-035235",
+    "status": "not_retrieved",
+    "error": "HTTPError"
+  },
+  {
+    "doi": "10.1111/jbg.12822",
+    "status": "retrieved",
+    "title": [
+      "Assessing the predictability of racing performance of Thoroughbreds using mixed‐effects model"
+    ],
+    "container": [
+      "Journal of Animal Breeding and Genetics"
+    ],
+    "authors": [
+      {
+        "given": "Daiki",
+        "family": "Oda"
+      },
+      {
+        "given": "Akio",
+        "family": "Onogi"
+      }
+    ],
+    "year": [
+      [
+        2023,
+        8,
+        28
+      ]
+    ],
+    "volume": "141",
+    "issue": "1",
+    "page": "24-32",
+    "article_number": null
+  },
+  {
+    "doi": "10.18297/etd/2953",
+    "status": "retrieved",
+    "title": [
+      "Horse racing prediction using graph-based features."
+    ],
+    "container": [],
+    "authors": [
+      {
+        "given": "Mehmet",
+        "family": "Gulum"
+      }
+    ],
+    "year": null,
+    "volume": null,
+    "issue": null,
+    "page": null,
+    "article_number": null
+  },
+  {
+    "doi": "10.3389/frai.2026.1896192",
+    "status": "retrieved",
+    "title": [
+      "Leakage-aware pre-event machine learning evaluation for horse-race prediction under temporal validation"
+    ],
+    "container": [
+      "Frontiers in Artificial Intelligence"
+    ],
+    "authors": [
+      {
+        "given": "Shuichi",
+        "family": "Sugiura"
+      }
+    ],
+    "year": [
+      [
+        2026,
+        9,
+        24
+      ]
+    ],
+    "volume": "9",
+    "issue": null,
+    "page": null,
+    "article_number": "1896192"
+  },
+  {
+    "doi": "10.5351/KJAS.2024.37.2.239",
+    "status": "retrieved",
+    "title": [
+      "Horse race rank prediction using learning-to-rank approaches"
+    ],
+    "container": [
+      "Korean Journal of Applied Statistics"
+    ],
+    "authors": [
+      {
+        "given": "Junhyoung",
+        "family": "Chung"
+      },
+      {
+        "given": "Donguk",
+        "family": "Shin"
+      },
+      {
+        "given": "Seyong",
+        "family": "Hwang"
+      },
+      {
+        "given": "Gunwoong",
+        "family": "Park"
+      }
+    ],
+    "year": [
+      [
+        2024,
+        4,
+        30
+      ]
+    ],
+    "volume": "37",
+    "issue": "2",
+    "page": "239-253",
+    "article_number": null
+  },
+  {
+    "doi": "10.1145/2939672.2939785",
+    "status": "retrieved",
+    "title": [
+      "XGBoost"
+    ],
+    "container": [
+      "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining"
+    ],
+    "authors": [
+      {
+        "given": "Tianqi",
+        "family": "Chen"
+      },
+      {
+        "given": "Carlos",
+        "family": "Guestrin"
+      }
+    ],
+    "year": [
+      [
+        2016,
+        8,
+        13
+      ]
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "785-794",
+    "article_number": null
+  },
+  {
+    "doi": "10.1371/journal.pone.0118432",
+    "status": "not_retrieved",
+    "error": "HTTPError"
+  }
+]

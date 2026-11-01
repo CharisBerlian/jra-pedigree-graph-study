@@ -12,17 +12,20 @@ The secondary $G_{\mathrm{ancestor}}$--$G_{\mathrm{mixed}}$ contrast for CatBoos
 \subsection{Coverage and Parent-Feature Availability}
 All $G_{\mathrm{ancestor}}$ training entries resolve at depth 1; some validation and test entries require deeper ancestors (Table~\ref{tab:focused_coverage}). No entry has a missing graph representation in the audited views. For $G_{\mathrm{mixed}}$, direct vectors cover all training entries but only 12.97\% of turf and 12.06\% of dirt test entries. All test entries have the three parent identifiers, but a known parent need not have a qualifying prior same-surface start: sire/dam/damsire zero-prior rates are 30.14\%/41.27\%/4.56\% on turf and 28.87\%/43.86\%/5.19\% on dirt. These entry-weighted rates differ from unseen categorical-parent rates in the historical B pipeline. Same-rule construction does not eliminate this coverage or cohort shift.
 
-\subsection{Historical Market and Parent-ID Context}
-Table~\ref{tab:historical_market} retains every family and surface for the earlier market-informed settings; Fig.~\ref{fig:historical_contrasts} retains all four historical AP contrasts. Odds alone gives AP 0.5668--0.5679 on turf and 0.5496--0.5511 on dirt. In the historical E--D comparison, all six AP intervals include zero. Adding final odds and popularity to C (E--C) increases AP by approximately 0.1004--0.1150 and Hit@3 by 0.066--0.078. These are independently tuned comparisons with retrospective final-market inputs, not isolated causal effects or evidence of betting profit. They do not test the new $G_{\mathrm{ancestor}}$ or P arms with market features.
-
-\input{tables/historical_market.tex}
-
-\begin{figure*}[!t]
+\begin{figure}[!t]
 \centering
 \input{figures/primary_ap_contrasts.tex}
-\caption{Historical analysis: all 24 AP contrasts for C--A, C--B, E--D and E--C. Points average paired seed-specific differences and lines are descriptive 95\% whole-race bootstrap intervals. Circles denote turf and squares dirt. Positive values favor the first setting. Panels (a) and (b) share a scale; (c) and (d) use different scales. Market inputs are retrospective and are absent from the new four-arm study.}
+\caption{Historical AP contrasts. Positive values favor the first setting. Points average paired seed differences; bars are descriptive 95\% whole-race bootstrap intervals, conditional on fitted models and unadjusted for multiplicity. Panels (a)--(b) share a scale; others differ. Market fields are retrospective and absent from the new arms.}
 \label{fig:historical_contrasts}
-\end{figure*}
+\end{figure}
+
+\subsection{Historical Market and Parent-ID Context}
+\input{tables/historical_market.tex}
+Table~\ref{tab:historical_market} retains every family and surface for the earlier market-informed settings; Fig.~\ref{fig:historical_contrasts} retains all four historical AP contrasts. Odds alone gives AP 0.5668--0.5679 on turf and 0.5496--0.5511 on dirt. In the historical E--D comparison, all six AP intervals include zero. Adding final odds and popularity to C (E--C) increases AP by approximately 0.1004--0.1150 and Hit@3 by 0.066--0.078. These are independently tuned comparisons with retrospective final-market inputs, not isolated causal effects or evidence of betting profit. They do not test the new $G_{\mathrm{ancestor}}$ or P arms with market features.
+
+
+
+
 
 Historically, C outperformed the tested categorical-parent B pipeline, but B was weaker than A; this does not establish added value beyond history or superiority over the supervised P comparator. Test sire/dam identifiers were unseen in the historical training-surface vocabulary for 30.04\%/38.73\% of turf entries and 28.75\%/42.15\% of dirt entries. The earlier no-observed-history subgroup was added after test release and is not necessarily a true debut cohort. The corrected deterministic random baseline has Hit@3 of 0.2431 turf and 0.2161 dirt, against analytical expectations 0.2433 and 0.2188.
 
@@ -35,4 +38,4 @@ The previously examined test set, unadjusted multiple comparisons and dependence
 In this exploratory same-cohort evaluation, the tested ancestor-rule graph pipeline did not consistently improve AP beyond either recent history or the specified chronological parent-performance pipeline. Turf primary contrasts were negative; dirt intervals included zero. The secondary CatBoost dirt comparison favored the ancestor-rule pipeline over the original mixed pipeline, but does not identify a fallback effect or establish improvement over the primary controls. Historical retrospective market comparisons remain separate and do not evaluate the new four arms beyond market information. Future work requires historically timestamped inputs and an unexamined cohort.
 
 \section*{Data and Code Availability}
-Race and pedigree records came from Netkeiba \cite{netkeibaRace,netkeibaDb}. Public data, graph/feature exports, models and predictions are on Kaggle (version 1): \url{https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025}. Code, configurations, aggregate results and reproduction instructions are at \url{https://github.com/CharisBerlian/jra-pedigree-graph-study} (release v1.0.1-paper). Data/results use CC BY 4.0; study-authored code uses MIT, with third-party licenses retained. The repository documents environments and limits; independent full-data retraining has not been established.
+Race and pedigree records came from Netkeiba \cite{netkeibaRace,netkeibaDb}. Public data, graph/feature exports, models and predictions are on Kaggle (version 1): \url{https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025}. Code, configurations, aggregate results and reproduction instructions are at \url{https://github.com/CharisBerlian/jra-pedigree-graph-study} (release v1.0.2-paper). Data/results use CC BY 4.0; study-authored code uses MIT, with third-party licenses retained. The repository documents environments and limits; independent full-data retraining has not been established.

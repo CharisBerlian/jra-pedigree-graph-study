@@ -1,6 +1,6 @@
 # Reproduction and scope
 
-Paper release: v1.0.0-paper, 1 November 2026. Data: https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025.
+Current paper release: v1.0.2-paper, 1 November 2026. Data: https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025 (version 1). The original exact replay packet remains attached to v1.0.0-paper.
 
 1. Aggregate reporting: regenerate tables and plots from `companion/` using the README commands.
 2. Synthetic implementation checks: run both fixture scripts. These are fabricated examples, separate from the real data.

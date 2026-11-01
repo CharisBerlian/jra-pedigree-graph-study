@@ -3,12 +3,15 @@
 Research data: [charischerw/jra-pedigree-graph-study-2010-2025](https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025) (paper release v1).
 Code and manuscript: [https://github.com/CharisBerlian/jra-pedigree-graph-study](https://github.com/CharisBerlian/jra-pedigree-graph-study).
 
+Current paper: [v1.0.2-paper](https://github.com/CharisBerlian/jra-pedigree-graph-study/releases/tag/v1.0.2-paper), five A4 pages. Figure 2 is beside the historical results on page 4; references are in first-citation order. The [manuscript review](docs/MANUSCRIPT_REVIEW.md) records changes, numerical checks and remaining boundaries.
+
 This release contains the historical experiment and the October 2026 focused four-arm study. The fixed title is retained. The four-arm comparisons use H, Gmixed, Gancestor and P, with no market predictors. Historical market comparisons use retrospectively recorded final odds/popularity. The test cohort had previously been examined, so the new comparisons are exploratory.
 
 ## Contents
 
 - `paper/`: current five-page IEEE manuscript and its LaTeX sources, figures and licensed fonts.
 - `docs/TABLE_LAYOUT_CHECKS.json`: numerical parity checks for the compact table layout in v1.0.1-paper.
+- `docs/MANUSCRIPT_REVIEW_CHECKS.json`: checks for all four tables, both figures, reported numerical claims, citation order and the v1.0.2-paper PDF.
 - `companion/focused/`: all 96 validation candidates, 24 selections, 72 test seed scores, 24 arm summaries and 36 AP/Hit@3 contrasts; frozen scientific source and synthetic fixtures.
 - `companion/historical/`: historical aggregate results, source and reporting generators.
 - `kaggle/`: historical graph, training, inference, evaluation and test sources.
@@ -30,6 +33,14 @@ To regenerate the focused manuscript table and figure from the released aggregat
 ```sh
 python -B generate_focused_ieee.py --report ../test/evaluation_report.json --seed-metrics ../test/seed_metrics.csv --arm-metrics ../test/arm_metrics.csv --contrasts ../test/contrasts.csv --out ../../../../regenerated-focused
 ```
+
+To regenerate the current column-width historical Figure 2, run from the repository root:
+
+```sh
+python -B companion/focused/reporting/render_historical_contrasts.py --source companion/historical/tables/primary_contrasts.csv --out regenerated-historical-figure.tex
+```
+
+This also writes a JSON coordinate audit. The original wide historical renderer is retained as a dated artifact under `companion/historical/code/`.
 
 ## Data, models and prediction replay
 
