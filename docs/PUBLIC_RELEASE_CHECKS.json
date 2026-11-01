@@ -8,5 +8,16 @@
   "full_training_rerun": false,
   "paper_pages": 6,
   "paper_visual_review": "all six pages checked",
-  "latex_overfull_or_undefined_warnings": false
+  "latex_overfull_or_undefined_warnings": false,
+  "packet_member_hash_checks": 99,
+  "packet_total_files": 100,
+  "all_reference_hashes_match": true,
+  "full_bootstrap_replay_run_for_this_publication": false,
+  "bootstrap_replay_requirement": "Exact Python 3.13.15 and recorded package pins; verification guards preserved",
+  "github_public_download_verified": true,
+  "dataset_public_access_verified": true,
+  "dataset_version": 1,
+  "data_license": "CC-BY-4.0",
+  "code_license": "MIT",
+  "canonical_manuscript_updated": true
 }

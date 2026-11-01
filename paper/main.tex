@@ -1,0 +1,35 @@
+% !TEX program = xelatex
+\RequirePackage{fontspec}
+\DeclareFontFamily{TU}{ptm}{}
+\DeclareFontShape{TU}{ptm}{m}{n}{<->"[lmroman10-regular.otf]"}{}
+\DeclareFontShape{TU}{ptm}{bx}{n}{<->"[lmroman10-bold.otf]"}{}
+\DeclareFontShape{TU}{ptm}{m}{it}{<->"[lmroman10-italic.otf]"}{}
+\DeclareFontShape{TU}{ptm}{bx}{it}{<->"[lmroman10-bolditalic.otf]"}{}
+\documentclass[conference,a4paper]{IEEEtran}
+\setmainfont[Path=fonts/,BoldFont=texgyretermes-bold.otf,ItalicFont=texgyretermes-italic.otf,BoldItalicFont=texgyretermes-bolditalic.otf]{texgyretermes-regular.otf}
+\newfontfamily\japanesefont[Path=fonts/]{NotoSerifCJKjp-Regular.otf}
+\usepackage{cite}
+\usepackage{amsmath,amssymb}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{url}
+\begin{document}
+\title{Evaluating Pedigree Graph Features Beyond Recent Form and Market Information in Horse Racing}
+\author{}
+\maketitle
+
+\begin{abstract}
+This study asks whether a pedigree-graph feature group improves top-three prediction beyond recent history when an ancestor-based representation is constructed consistently across chronological splits. We compare context and history, the original direct-else-ancestor graph pipeline, an ancestor-rule graph pipeline and a supervised chronological parent-performance control on Japan Racing Association flat races. The observed 2010--2025 cohort has 725,999 entries in 51,313 races. Across three classifier families and two surfaces, all six turf average-precision contrasts of the ancestor-rule pipeline against history or the parent control are negative with descriptive paired intervals below zero; the six dirt intervals include zero. All 12 primary Hit@3 intervals include zero. A secondary CatBoost dirt comparison favors the ancestor-rule pipeline over the original mixed pipeline, but does not isolate a fallback effect. These comparisons are exploratory because the test cohort was previously examined. The same construction rule does not equalize coverage or eliminate the original graph's historical-topology limitations. A separate historical analysis retains final-market comparisons, which are retrospective and are not controls in the new four-arm study.
+\end{abstract}
+\begin{IEEEkeywords}
+graph embedding, horse racing, Node2Vec, pedigree, predictive modeling
+\end{IEEEkeywords}
+
+\input{sections/focused_introduction.tex}
+\input{sections/focused_methods.tex}
+\input{sections/focused_results.tex}
+\input{references.tex}
+\end{document}

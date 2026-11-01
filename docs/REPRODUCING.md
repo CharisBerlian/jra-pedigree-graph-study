@@ -10,3 +10,11 @@ Paper release: v1.0.0-paper, 1 November 2026. Data: https://www.kaggle.com/datas
 The release has been packaged from frozen artifacts. The complete scientific training run has not been rerun as part of publication. Report any new execution as a replication attempt with its own environment and outputs. Test reuse, repeated horses, unadjusted intervals and historical graph/market timing limitations remain unchanged.
 
 Source access was confirmed by the depositing author. Operational transport wrappers, expired signed URLs, credentials and failed partial transfers are excluded. Rejected tuning model binaries are included where present in the frozen model tree; all candidate aggregate evidence is in the companion. A fresh website scrape is not an exact replacement for these frozen inputs.
+
+## Published Kaggle layout
+
+Kaggle expands both ZIP and GZIP files during ingestion and adds each ZIP basename as a top-level directory. The published dataset has 4,921 files (about 12.74 GB expanded); source `.csv.gz` files appear as `.csv`. The archive/member inventories record the original uploaded containers, whose compressed-byte hashes cannot be applied directly to those expanded CSVs. Preserve the published CSV values and original split assignments. The example notebook supports this expanded layout and recomputes all 72 point scores.
+
+For the byte-exact, self-contained focused replay packet, download [focused-prediction-replay.zip](https://github.com/CharisBerlian/jra-pedigree-graph-study/releases/download/v1.0.0-paper/focused-prediction-replay.zip) from the GitHub release. That asset preserves the original GZIP members and all hash bindings. Extract it into an empty directory and use its recorded Python 3.13.15 environment to run `verify.py`. Its earlier private-access labels describe the original snapshot and are superseded by this authorized CC BY 4.0 public release.
+
+For a new full training run, restore the workspace paths by removing the top-level archive basenames, rebuild/export inputs with the provided source and create new run metadata. Do not substitute recompressed CSV files under original compressed-file hashes or disable frozen provenance guards. Publishing the data does not claim bitwise-identical retraining.

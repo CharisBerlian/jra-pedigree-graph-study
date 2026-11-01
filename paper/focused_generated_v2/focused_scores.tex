@@ -1,0 +1,36 @@
+\begin{table*}[!t]
+\caption{Four-arm test scores across the three fitted seeds}
+\label{tab:focused_scores}
+\centering
+\begin{tabular}{lllcc}
+\hline
+Surface & Family & Arm & AP & Hit@3 \\
+\hline
+Turf & XGBoost & H & 0.4710 $\pm$ 0.0006 & 0.4580 $\pm$ 0.0004 \\
+Turf & XGBoost & $G_{\mathrm{mixed}}$ & 0.4631 $\pm$ 0.0010 & 0.4600 $\pm$ 0.0007 \\
+Turf & XGBoost & $G_{\mathrm{ancestor}}$ & 0.4621 $\pm$ 0.0002 & 0.4603 $\pm$ 0.0019 \\
+Turf & XGBoost & P & 0.4705 $\pm$ 0.0002 & 0.4621 $\pm$ 0.0015 \\
+Turf & LightGBM & H & 0.4738 $\pm$ 0.0005 & 0.4585 $\pm$ 0.0010 \\
+Turf & LightGBM & $G_{\mathrm{mixed}}$ & 0.4663 $\pm$ 0.0004 & 0.4645 $\pm$ 0.0006 \\
+Turf & LightGBM & $G_{\mathrm{ancestor}}$ & 0.4664 $\pm$ 0.0010 & 0.4629 $\pm$ 0.0015 \\
+Turf & LightGBM & P & 0.4736 $\pm$ 0.0002 & 0.4646 $\pm$ 0.0021 \\
+Turf & CatBoost & H & 0.4725 $\pm$ 0.0005 & 0.4601 $\pm$ 0.0005 \\
+Turf & CatBoost & $G_{\mathrm{mixed}}$ & 0.4668 $\pm$ 0.0002 & 0.4627 $\pm$ 0.0011 \\
+Turf & CatBoost & $G_{\mathrm{ancestor}}$ & 0.4667 $\pm$ 0.0006 & 0.4638 $\pm$ 0.0042 \\
+Turf & CatBoost & P & 0.4712 $\pm$ 0.0001 & 0.4627 $\pm$ 0.0016 \\
+Dirt & XGBoost & H & 0.4561 $\pm$ 0.0007 & 0.4634 $\pm$ 0.0012 \\
+Dirt & XGBoost & $G_{\mathrm{mixed}}$ & 0.4541 $\pm$ 0.0009 & 0.4616 $\pm$ 0.0008 \\
+Dirt & XGBoost & $G_{\mathrm{ancestor}}$ & 0.4552 $\pm$ 0.0007 & 0.4634 $\pm$ 0.0013 \\
+Dirt & XGBoost & P & 0.4575 $\pm$ 0.0009 & 0.4654 $\pm$ 0.0020 \\
+Dirt & LightGBM & H & 0.4585 $\pm$ 0.0006 & 0.4650 $\pm$ 0.0013 \\
+Dirt & LightGBM & $G_{\mathrm{mixed}}$ & 0.4567 $\pm$ 0.0010 & 0.4614 $\pm$ 0.0020 \\
+Dirt & LightGBM & $G_{\mathrm{ancestor}}$ & 0.4578 $\pm$ 0.0004 & 0.4632 $\pm$ 0.0019 \\
+Dirt & LightGBM & P & 0.4606 $\pm$ 0.0006 & 0.4680 $\pm$ 0.0023 \\
+Dirt & CatBoost & H & 0.4523 $\pm$ 0.0004 & 0.4603 $\pm$ 0.0014 \\
+Dirt & CatBoost & $G_{\mathrm{mixed}}$ & 0.4525 $\pm$ 0.0011 & 0.4619 $\pm$ 0.0020 \\
+Dirt & CatBoost & $G_{\mathrm{ancestor}}$ & 0.4544 $\pm$ 0.0009 & 0.4644 $\pm$ 0.0011 \\
+Dirt & CatBoost & P & 0.4553 $\pm$ 0.0015 & 0.4643 $\pm$ 0.0018 \\
+\hline
+\end{tabular}
+\par\smallskip Scores are fractions, shown as mean $\pm$ sample SD across three paired seeds. The test was previously examined. Cohort denominators are in Table~\ref{tab:cohort}; graph coverage and parent-summary availability are in Table~\ref{tab:focused_coverage}.
+\end{table*}

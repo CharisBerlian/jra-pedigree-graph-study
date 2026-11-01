@@ -1,15 +1,13 @@
 # Evaluating Pedigree Graph Features Beyond Recent Form and Market Information in Horse Racing
 
-**Publication status:** The scientific code, aggregate results and tests are being published first. The 5.24 GB Kaggle upload and final manuscript availability update are still in progress.
-
-Research data (upload in progress): [charischerw/jra-pedigree-graph-study-2010-2025](https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025) (paper release v1).
+Research data: [charischerw/jra-pedigree-graph-study-2010-2025](https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025) (paper release v1).
 Code and manuscript: [https://github.com/CharisBerlian/jra-pedigree-graph-study](https://github.com/CharisBerlian/jra-pedigree-graph-study).
 
 This release contains the historical experiment and the October 2026 focused four-arm study. The fixed title is retained. The four-arm comparisons use H, Gmixed, Gancestor and P, with no market predictors. Historical market comparisons use retrospectively recorded final odds/popularity. The test cohort had previously been examined, so the new comparisons are exploratory.
 
 ## Contents
 
-- The revised manuscript and LaTeX source will be added after the data link is verified.
+- `paper/`: current six-page IEEE manuscript and its LaTeX sources, figures and licensed fonts.
 - `companion/focused/`: all 96 validation candidates, 24 selections, 72 test seed scores, 24 arm summaries and 36 AP/Hit@3 contrasts; frozen scientific source and synthetic fixtures.
 - `companion/historical/`: historical aggregate results, source and reporting generators.
 - `kaggle/`: historical graph, training, inference, evaluation and test sources.
@@ -43,3 +41,11 @@ The historical scientific environment used Python 3.12.13. The focused scientifi
 Research data and aggregate result tables: CC BY 4.0, as confirmed by the depositing author. Attribute the study and acknowledge Netkeiba as the race/pedigree record source. Source code authored for this study: MIT. Included IEEEtran and font files retain their original notices and licenses; these are not relicensed by the repository license. The depositor confirmed permission for public redistribution and CC BY 4.0 reuse. No account credentials, temporary signed links or operational payload-bearing wrappers are distributed.
 
 Earlier companion documents are preserved as dated methodological evidence. Their descriptions of private/local access and pending work describe their historical snapshots and are superseded by this release's README and public dataset inventory. Their scientific caveats remain applicable.
+
+## Published Kaggle layout
+
+Kaggle expands both ZIP and GZIP files during ingestion and adds each ZIP basename as a top-level directory. The published dataset has 4,921 files (about 12.74 GB expanded); source `.csv.gz` files appear as `.csv`. The archive/member inventories record the original uploaded containers, whose compressed-byte hashes cannot be applied directly to those expanded CSVs. Preserve the published CSV values and original split assignments. The example notebook supports this expanded layout and recomputes all 72 point scores.
+
+For the byte-exact, self-contained focused replay packet, download [focused-prediction-replay.zip](https://github.com/CharisBerlian/jra-pedigree-graph-study/releases/download/v1.0.0-paper/focused-prediction-replay.zip) from the GitHub release. That asset preserves the original GZIP members and all hash bindings. Extract it into an empty directory and use its recorded Python 3.13.15 environment to run `verify.py`. Its earlier private-access labels describe the original snapshot and are superseded by this authorized CC BY 4.0 public release.
+
+For a new full training run, restore the workspace paths by removing the top-level archive basenames, rebuild/export inputs with the provided source and create new run metadata. Do not substitute recompressed CSV files under original compressed-file hashes or disable frozen provenance guards. Publishing the data does not claim bitwise-identical retraining.

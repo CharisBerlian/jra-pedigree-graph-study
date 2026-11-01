@@ -1,0 +1,19 @@
+\begin{table*}[!t]
+\caption{Graph Representation Coverage by Partition and Surface}
+\label{tab:focused_coverage}
+\centering
+\begin{tabular}{llrrrrrr}
+\hline
+& & & $G_{\mathrm{mixed}}$ & \multicolumn{3}{c}{$G_{\mathrm{ancestor}}$: first available depth} & Missing \\
+Partition & Surface & Entries & direct & 1 & 2 & 3 & (either) \\
+\hline
+Training & Turf & 271,549 & 271,549 & 271,549 & 0 & 0 & 0 \\
+Training & Dirt & 277,207 & 277,207 & 277,207 & 0 & 0 & 0 \\
+Validation & Turf & 42,783 & 21,708 & 42,580 & 202 & 1 & 0 \\
+Validation & Dirt & 45,323 & 24,398 & 45,081 & 242 & 0 & 0 \\
+Test & Turf & 43,477 & 5,641 & 42,866 & 596 & 15 & 0 \\
+Test & Dirt & 45,660 & 5,506 & 44,613 & 1,039 & 8 & 0 \\
+\hline
+\end{tabular}
+\par\smallskip Counts are entries, not distinct horses; counts are identical across graph seeds. $G_{\mathrm{mixed}}$ uses fallback for entries without direct vectors. All test entries have sire, dam and damsire identifiers. Their P zero-prior counts are 13,103/17,941/1,982 on turf and 13,182/20,027/2,371 on dirt, in that order.
+\end{table*}
