@@ -1,0 +1,13 @@
+family,surface,setting,seed,group,mean_abs_attribution,validation_entry_count,validation_race_count
+lightgbm,dirt,S6,0,graph_availability,0.0,2003,142
+lightgbm,dirt,S6,0,graph_cluster,0.1357017784546074,2003,142
+lightgbm,dirt,S6,0,graph_embeddings,0.12485675286419,2003,142
+catboost,dirt,S7,0,graph_availability,0.0,2003,142
+catboost,dirt,S7,0,graph_cluster,0.029361341169983953,2003,142
+catboost,dirt,S7,0,graph_embeddings,0.06252600152793285,2003,142
+catboost,turf,S6,0,graph_availability,0.0,2010,154
+catboost,turf,S6,0,graph_cluster,0.057941909212112654,2010,154
+catboost,turf,S6,0,graph_embeddings,0.20582133608399075,2010,154
+catboost,turf,S7,0,graph_availability,0.0,2010,154
+catboost,turf,S7,0,graph_cluster,0.0,2010,154
+catboost,turf,S7,0,graph_embeddings,0.05413728269660147,2010,154

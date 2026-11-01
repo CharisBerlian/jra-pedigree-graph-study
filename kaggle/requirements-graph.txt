@@ -1,0 +1,8 @@
+# Isolated Kaggle Python 3.10-3.12 environment; NumPy 1.x for nptyping compatibility.
+numpy==1.26.4
+scipy==1.13.1
+numba==0.61.2
+gensim==4.4.0
+pecanpy==2.0.9
+nptyping==2.5.0
+scikit-learn==1.6.1

@@ -1,0 +1,82 @@
+{
+  "cohort_key_sha256": "9c1950df63bb33b9385b7628d72d355aff1d4ddeb20886fd74b80f870478d954",
+  "cohort_non_graph_and_labels_sha256": "0f09e01eeace7a050fce71e257561b76a9d9dd6bbe215531db88627d99b42244",
+  "parent_certificate_sha256": "47c8b17062f8dbbd8605b0f077ecf0fca183e1cb71f9899daaef0359c4aac45d",
+  "parent_feature_sha256": "d40abb179dc519e6f05a10b2918347d7236bad065d71652701e1acad3e519d3c",
+  "prefit_sha256": "512e0e87831f9b8b30b28ba1e52ff1327e5e3101039e542f54ea37430a7bf7fa",
+  "status": "verified",
+  "views": [
+    {
+      "origins": {
+        "data": "kernel:charischerw/jra-focused-seed0-prep-v4-mkdir1:focused-preparation/Gmixed-seed0.csv.gz",
+        "sidecar": "kernel:charischerw/jra-focused-seed0-prep-v4-mkdir1:focused-preparation/Gmixed-seed0.csv.json"
+      },
+      "payload_sha256": "9b28fb046619c351f9495ccd13d32dc52fe06c83622992aff878c3277119da31",
+      "raw_sha256": "b9bec893c70a3f35dde76bf2fcbc59694081149a3b2c9b6ebb514224b6ee1cc5",
+      "seed": 0,
+      "sidecar_sha256": "65aa1d6ed13cbc489ffea3a4b9ed6eba51f8716a93aa156cbcc2d705af1a217b",
+      "version": 1,
+      "view": "Gmixed"
+    },
+    {
+      "origins": {
+        "data": "kernel:charischerw/jra-focused-seed0-prep-v4-mkdir1:focused-preparation/Gancestor-seed0.csv.gz",
+        "sidecar": "kernel:charischerw/jra-focused-seed0-prep-v4-mkdir1:focused-preparation/Gancestor-seed0.csv.json"
+      },
+      "payload_sha256": "4ffc06d54e2f2504ab2487a3c84aab8aba5c4fb8f190e14b37e02c72b7cd703e",
+      "raw_sha256": "042b267d042c6ba555a3ef324937d41a51ddf7366d5fdf058e71d35becb736f5",
+      "seed": 0,
+      "sidecar_sha256": "f7e378542153be1b1540349948ab24d3da65933e99795bece8671c1c82825bf3",
+      "version": 1,
+      "view": "Gancestor"
+    },
+    {
+      "origins": {
+        "data": "kernel:charischerw/jra-focused-seed1-prep-v4-mkdir1:focused-preparation/Gmixed-seed1.csv.gz",
+        "sidecar": "kernel:charischerw/jra-focused-seed1-prep-v4-mkdir1:focused-preparation/Gmixed-seed1.csv.json"
+      },
+      "payload_sha256": "e4af74906f626883e73f5de9f3554da70ba38d7e4dc2ce220d5a154e1490b5f8",
+      "raw_sha256": "46df24dcbaa71f03732e98070ba338474bf667696eb6f23ac9d4351e7832ca25",
+      "seed": 1,
+      "sidecar_sha256": "0f55b0ee0de6ebc367ff464f4ee8292bf4be48d5a60ba713253677c44fd18ac9",
+      "version": 1,
+      "view": "Gmixed"
+    },
+    {
+      "origins": {
+        "data": "kernel:charischerw/jra-focused-seed1-prep-v4-mkdir1:focused-preparation/Gancestor-seed1.csv.gz",
+        "sidecar": "kernel:charischerw/jra-focused-seed1-prep-v4-mkdir1:focused-preparation/Gancestor-seed1.csv.json"
+      },
+      "payload_sha256": "db87833bf8df36c4f1bd4943a88f0363cf84a946df854aa4b37c6831e2ea6f65",
+      "raw_sha256": "b0ea9c0fced651750da8d1b39475c0209f3defa9aa450061b798b19107d0c30e",
+      "seed": 1,
+      "sidecar_sha256": "d5e22d0597e122e9dd0bb95dc675313f67323adc5bcd2a87a2a003636d0af86c",
+      "version": 1,
+      "view": "Gancestor"
+    },
+    {
+      "origins": {
+        "data": "kernel:charischerw/jra-focused-seed2-prep-v4-mkdir1:focused-preparation/Gmixed-seed2.csv.gz",
+        "sidecar": "kernel:charischerw/jra-focused-seed2-prep-v4-mkdir1:focused-preparation/Gmixed-seed2.csv.json"
+      },
+      "payload_sha256": "5714633038ed884d41a303e80db7bc969e106e52735a45e289b8d454b9dd94b1",
+      "raw_sha256": "beccc97b81b0adf3717a65a8c5feacc0c40bdc9830cdd4e2089e3814c01d0e87",
+      "seed": 2,
+      "sidecar_sha256": "520f0011957ffe978ec25a8711ec557a555cef76e8838d4636ce2446d4bc8041",
+      "version": 1,
+      "view": "Gmixed"
+    },
+    {
+      "origins": {
+        "data": "kernel:charischerw/jra-focused-seed2-prep-v4-mkdir1:focused-preparation/Gancestor-seed2.csv.gz",
+        "sidecar": "kernel:charischerw/jra-focused-seed2-prep-v4-mkdir1:focused-preparation/Gancestor-seed2.csv.json"
+      },
+      "payload_sha256": "86eb8e358bd866180f08ec7aa7c504a124bb07941c92f8a1cf0c16c9d1f06fe6",
+      "raw_sha256": "9cc1fce18391a432597a3a734a16911b6086c2461bace15aa3fcc33bf1695118",
+      "seed": 2,
+      "sidecar_sha256": "e7bf13911356c6ec07e80cc56b73ceadb7a7c179a7961590bc6760d39d893322",
+      "version": 1,
+      "view": "Gancestor"
+    }
+  ]
+}

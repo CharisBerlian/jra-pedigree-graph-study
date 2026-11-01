@@ -1,0 +1,16 @@
+{
+  "coverage_rows": 24,
+  "point_max_abs_errors": {
+    "ap_first": 1.1102230246251565e-16,
+    "ap_second": 1.1102230246251565e-16,
+    "delta": 1.1102230246251565e-16,
+    "hit_contribution_delta": 1.734723475976807e-18
+  },
+  "recomputed_ci_rows": 1,
+  "ci_row": "turf/xgboost/S6-S2/direct",
+  "ci_replicates": 1000,
+  "ci_max_abs_error": 1.0755285551056204e-16,
+  "expanded_race_draws_checked": 2,
+  "parent_test_maps_verified": true,
+  "numpy": "2.4.4"
+}

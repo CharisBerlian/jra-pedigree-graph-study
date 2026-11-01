@@ -1,0 +1,51 @@
+{
+  "original_graph_nodes": 93474,
+  "scope": "train and validation only; no labels/test rows/model performance read",
+  "source_train_validation_sha256": "98afbbdea692da9e46e723af27e4f132a14a59d59fb36e650513dc02480b4fa4",
+  "train_validation_by_split_surface": {
+    "train/dirt": {
+      "ancestor_depth_1": 277207,
+      "dam_available": 277207,
+      "dam_export_disagreement": 0,
+      "damsire_available": 277207,
+      "rows": 277207,
+      "sire_available": 277207,
+      "sire_export_disagreement": 0
+    },
+    "train/turf": {
+      "ancestor_depth_1": 271549,
+      "dam_available": 271549,
+      "dam_export_disagreement": 0,
+      "damsire_available": 271549,
+      "rows": 271549,
+      "sire_available": 271549,
+      "sire_export_disagreement": 0
+    },
+    "validation/dirt": {
+      "ancestor_depth_1": 45081,
+      "ancestor_depth_2": 242,
+      "dam_available": 45323,
+      "dam_export_disagreement": 0,
+      "damsire_available": 45323,
+      "rows": 45323,
+      "sire_available": 45323,
+      "sire_export_disagreement": 0
+    },
+    "validation/turf": {
+      "ancestor_depth_1": 42580,
+      "ancestor_depth_2": 202,
+      "ancestor_depth_3": 1,
+      "dam_available": 42783,
+      "dam_export_disagreement": 0,
+      "damsire_available": 42783,
+      "rows": 42783,
+      "sire_available": 42783,
+      "sire_export_disagreement": 0
+    }
+  },
+  "vector_sha256": {
+    "kaggle\\notebook-output\\production-seed0-version2\\jra-production\\seed-0\\nodevectors_seed0.npz": "7451b79270c8f272e57f93b6fa91ba6bac977e75280da21c8bc46320aa0faa74",
+    "kaggle\\notebook-output\\production-seed1-version1\\jra-production\\seed-1\\nodevectors_seed1.npz": "0b04d12000f3542c507e24b32e30af8afd48c000e1abce0f0564d1525876b833",
+    "kaggle\\notebook-output\\production-seed2-version1\\jra-production\\seed-2\\nodevectors_seed2.npz": "a32153ea56f0a3502b29273a00aabf96b46cb5184f6e1b92dbffcfa17e48bc7c"
+  }
+}

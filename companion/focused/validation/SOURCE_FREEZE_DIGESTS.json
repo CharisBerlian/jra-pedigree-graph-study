@@ -1,0 +1,30 @@
+{
+  "model_freeze_sha256": "09200d2194e71836e6093c03c4e5d35a395ab859ad2488633e7cbc0657c7715e",
+  "scope": "Selected frozen code bytes only; no private model/input artifacts or full-data reproduction.",
+  "source_sha256": {
+    "ancestry.py": "b3f8ef803e30e7719371a6f89842974ec579eb9dac75a6fb637a81af0bbf7c64",
+    "apply_frozen_parent.py": "c5e14fc5934547a3c9a310e64d00bf43f23dd8f2424500f37f934b5d5cc03f16",
+    "assemble_focused_test.py": "c68eea93441f807524c62401f52153e5aea688ed69c4be13c7f8f05dd6529dd1",
+    "audit_experiment_outputs.py": "71360fd3e7a121c42777605f8aa56fcf92ccd125df18c005444d942ef3ee4d01",
+    "check_validation_parent.py": "a90c9ae782f3a8bc27f40f0f91391bd48f28926bd7cf1f36f3841f7c6b24ab89",
+    "evaluate_focused.py": "fe02aaf7d5e342f24ecb5f1e44d1d6ea25c62dbc0a4639b445c666b9dc791a15",
+    "evaluate_locked.py": "10b598ff5bad225925b847c0b6778ce2abf7fbaf6297690b4b7f18a44b50c363",
+    "evaluate_locked_test_results.py": "95e8a9ebad14c65b755d27c0178b0a64f04c8765e24614d917b8bcc0cd06c4db",
+    "experiment_features.py": "3a4fc0d2192beb39c6e9c3ed62c4528c1a84fa4d5c5c98d41e75e49e1c7ed27e",
+    "extract_focused_outcomes.py": "6aca6f51656aea2baf3afe0a6750a33a35a0ffbd884dce0db5049f15d81868dc",
+    "extract_sensitivity_outcomes.py": "b863c3dd1581d2631f380842154c660d23b03363a19858989554b32364369f77",
+    "feature_adapter.py": "3c8a9c293ae9bf16ba58bfd06f1b37829235d7ed734f11b3ecf5a68748e7b0c8",
+    "freeze_focused_models.py": "f940e787fff14e999d79c09462e65bc3469ab0327cff218a6f73c1ef700afe38",
+    "freeze_sensitivity_models.py": "6fc7be032b76b79447952432c55593da9e8b234eae3316bfe96f965e3666c452",
+    "graph_pilot.py": "34e602f0b60cabebe66674692bc397f5860dea2a3318adfd02efd14deb4addc4",
+    "infer_focused.py": "078cfebc06e81605da0e046efa12df3298767d6c2efc779cd038b3e0bdfd0270",
+    "metrics.py": "0a79709dde1e379b1f386de7b942cce4d4ec43090a0b71e531c537d4a1c0a534",
+    "parent_control.py": "29176a06040954d98d6854d65914e9d77c8e75c2bd7a55f4f45907e1a5b945c8",
+    "prepare_prediction.py": "724096edeaffb40c01166e41bac458ea91aabc52d19342eb65833e602a368060",
+    "run_experiments.py": "786e4db859c9a4fa17dba3c61a92bf110d3f618f6d2a0b787c47e4c6d9154b87",
+    "run_test_inference.py": "bcdb4003e82ad21df6af527fd17fba8bbf7da9b1e4386c5404292902f8179dcb",
+    "test_frozen_parent.py": "305f344390acb25802e0d399f2796c8f1f57bbf806be2e43dadf3d27ca1251a9",
+    "test_future_focused.py": "223fc1d55ecb655b49c0792606314d0d4b1f869ad8324158e2b22d2a952dc661"
+  },
+  "status": "source_hashes_checked"
+}

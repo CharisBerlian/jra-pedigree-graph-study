@@ -1,0 +1,15 @@
+{
+  "origins": {
+    "parent_features.csv.gz": "kernel:charischerw/jra-focused-parent-prep-v4-mkdir1:focused-preparation/parent_features.csv.gz",
+    "parent_manifest.json": "kernel:charischerw/jra-focused-parent-prep-v4-mkdir1:focused-preparation/parent_manifest.json"
+  },
+  "parent_features_payload_sha256": "ab732ff06a8e6d23f99d23f9ed2dcddeb0685f2b1b868be43af626a4380e30da",
+  "parent_features_raw_sha256": "dd2c807d4996fd0269987d10fe62b287f6d8aae732cbccba99be7aa3ae78f550",
+  "parent_manifest_sha256": "569530c833d53fe912a84329c2749b97a7aead49e0feaebd3a5277ddedae245a",
+  "parent_map_sha256": "f07bbf61e92d67a70de28f5832751a0a27d5d6675d2111ceccd1cf10b2c63774",
+  "prefit_sha256": "512e0e87831f9b8b30b28ba1e52ff1327e5e3101039e542f54ea37430a7bf7fa",
+  "record_sha256": "a34fc120647badd6bd3049a5d4265b5362cab315ea50946ba8156c2e7da6399a",
+  "remote_marker_sha256": "de1b9cf8510509dc76cbc7084d5b2a9647d9160791a776fbcbe9323767a78e7f",
+  "status": "verified",
+  "version": 1
+}

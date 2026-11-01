@@ -1,0 +1,208 @@
+{
+  "candidate_count": 96,
+  "candidate_curves_at_cap": 21,
+  "cells": [
+    {
+      "arm": "H",
+      "candidate_curves_at_cap": 1,
+      "family": "xgboost",
+      "selected_best_round": 1034,
+      "selected_curve_at_cap": false,
+      "surface": "turf"
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_curves_at_cap": 0,
+      "family": "xgboost",
+      "selected_best_round": 828,
+      "selected_curve_at_cap": false,
+      "surface": "turf"
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_curves_at_cap": 0,
+      "family": "xgboost",
+      "selected_best_round": 462,
+      "selected_curve_at_cap": false,
+      "surface": "turf"
+    },
+    {
+      "arm": "P",
+      "candidate_curves_at_cap": 1,
+      "family": "xgboost",
+      "selected_best_round": 900,
+      "selected_curve_at_cap": false,
+      "surface": "turf"
+    },
+    {
+      "arm": "H",
+      "candidate_curves_at_cap": 0,
+      "family": "xgboost",
+      "selected_best_round": 764,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_curves_at_cap": 0,
+      "family": "xgboost",
+      "selected_best_round": 401,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_curves_at_cap": 0,
+      "family": "xgboost",
+      "selected_best_round": 397,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    },
+    {
+      "arm": "P",
+      "candidate_curves_at_cap": 0,
+      "family": "xgboost",
+      "selected_best_round": 656,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    },
+    {
+      "arm": "H",
+      "candidate_curves_at_cap": 0,
+      "family": "lightgbm",
+      "selected_best_round": 831,
+      "selected_curve_at_cap": false,
+      "surface": "turf"
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_curves_at_cap": 0,
+      "family": "lightgbm",
+      "selected_best_round": 393,
+      "selected_curve_at_cap": false,
+      "surface": "turf"
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_curves_at_cap": 0,
+      "family": "lightgbm",
+      "selected_best_round": 719,
+      "selected_curve_at_cap": false,
+      "surface": "turf"
+    },
+    {
+      "arm": "P",
+      "candidate_curves_at_cap": 0,
+      "family": "lightgbm",
+      "selected_best_round": 634,
+      "selected_curve_at_cap": false,
+      "surface": "turf"
+    },
+    {
+      "arm": "H",
+      "candidate_curves_at_cap": 0,
+      "family": "lightgbm",
+      "selected_best_round": 749,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_curves_at_cap": 0,
+      "family": "lightgbm",
+      "selected_best_round": 640,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_curves_at_cap": 0,
+      "family": "lightgbm",
+      "selected_best_round": 477,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    },
+    {
+      "arm": "P",
+      "candidate_curves_at_cap": 0,
+      "family": "lightgbm",
+      "selected_best_round": 1046,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    },
+    {
+      "arm": "H",
+      "candidate_curves_at_cap": 4,
+      "family": "catboost",
+      "selected_best_round": 1192,
+      "selected_curve_at_cap": true,
+      "surface": "turf"
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_curves_at_cap": 2,
+      "family": "catboost",
+      "selected_best_round": 1195,
+      "selected_curve_at_cap": true,
+      "surface": "turf"
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_curves_at_cap": 4,
+      "family": "catboost",
+      "selected_best_round": 1165,
+      "selected_curve_at_cap": true,
+      "surface": "turf"
+    },
+    {
+      "arm": "P",
+      "candidate_curves_at_cap": 3,
+      "family": "catboost",
+      "selected_best_round": 992,
+      "selected_curve_at_cap": false,
+      "surface": "turf"
+    },
+    {
+      "arm": "H",
+      "candidate_curves_at_cap": 2,
+      "family": "catboost",
+      "selected_best_round": 1130,
+      "selected_curve_at_cap": true,
+      "surface": "dirt"
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_curves_at_cap": 0,
+      "family": "catboost",
+      "selected_best_round": 1070,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_curves_at_cap": 1,
+      "family": "catboost",
+      "selected_best_round": 869,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    },
+    {
+      "arm": "P",
+      "candidate_curves_at_cap": 3,
+      "family": "catboost",
+      "selected_best_round": 1121,
+      "selected_curve_at_cap": false,
+      "surface": "dirt"
+    }
+  ],
+  "interpretation": "hit_cap describes a candidate evaluation curve reaching the round limit, not the selected best round.",
+  "max_rounds": 1200,
+  "max_selected_best_round": 1195,
+  "refit_count": 72,
+  "refit_selected_round_at_cap": 0,
+  "scope": "validation_only",
+  "selected_best_round_at_cap": 0,
+  "selected_count": 24,
+  "selected_curves_at_cap": 4,
+  "source_manifest_sha256": "09200d2194e71836e6093c03c4e5d35a395ab859ad2488633e7cbc0657c7715e"
+}

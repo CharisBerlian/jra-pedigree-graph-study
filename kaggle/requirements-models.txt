@@ -1,0 +1,5 @@
+# Bounded LightGBM validation batch (Kaggle only; do not install locally).
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.6.1
+lightgbm==4.6.0

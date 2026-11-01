@@ -1,0 +1,15 @@
+{
+  "arm_rows": 24,
+  "cohort_audit_report_sha256": "a73c15df97e8e20a59112d670d482dcc09f9d6879a8a6a04fa621000a6de3e0c",
+  "cohort_scope": "All six label-free views independently reaggregated; five output files matched byte-for-byte.",
+  "contrast_rows": 36,
+  "evaluation_report_sha256": "ab80c5ddfaad55f7348afb03aebdf1d2312a43fdf710e895a92ee1fed749caa7",
+  "limitations": "Native replay invokes the same frozen evaluator; source data, identified packet and full retraining are not included or public.",
+  "maximum_ap_error": 3.3306690738754696e-16,
+  "maximum_hit_error": 1.1102230246251565e-16,
+  "native_packet_replay_report_sha256": "938e087c472357ee6b63901573c19874d042bba3c17f3a975f05becbe290dba9",
+  "point_audit_report_sha256": "e5c45ad9f3579ce4f27904016b9d9bb64ede1128f4d972cc8ac65bb4dad29e70",
+  "point_scope": "Independent AP threshold-grouped formula and deterministic race top-three selection; 72 prediction sets; all means, sample SDs, paired points and Hit scaling. Interval endpoints checked, not independently bootstrapped.",
+  "seed_rows": 72,
+  "status": "internal_checks_pass"
+}

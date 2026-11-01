@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.db
+*.db-*
+*.npz
+*.npy
+*.gz
+*.zip
+*.log
+*.aux
+*.out
+*.synctex*
+regenerated-focused/
+/paper/

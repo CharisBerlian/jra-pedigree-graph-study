@@ -1,0 +1,12 @@
+{
+  "synthetic_core": "PASS",
+  "synthetic_metrics": "PASS",
+  "focused_table_exact_match": true,
+  "focused_figure_exact_match": true,
+  "all_72_ap_and_hit_at_3_point_scores": "PASS",
+  "point_check_runtime": "Python 3.12.14; NumPy 1.26.4; pandas 2.2.3; scikit-learn 1.6.1",
+  "full_training_rerun": false,
+  "paper_pages": 6,
+  "paper_visual_review": "all six pages checked",
+  "latex_overfull_or_undefined_warnings": false
+}

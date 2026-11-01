@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Cite the paper and the specific Kaggle dataset version used."
+type: software
+title: "Evaluating Pedigree Graph Features Beyond Recent Form and Market Information in Horse Racing — Research Code and Materials"
+authors:
+  - name: "Contributors to the JRA pedigree graph study"
+version: 1.0.0-paper
+date-released: 2026-11-01
+url: "https://github.com/CharisBerlian/jra-pedigree-graph-study"
+repository-code: "https://github.com/CharisBerlian/jra-pedigree-graph-study"
+license: MIT

@@ -1,0 +1,278 @@
+{
+  "b0": {
+    "prevalence": "train_surface_positives_divided_by_train_surface_entries",
+    "rank_key": "sha256(b0-v1|race_id|horse_id|horse_number)[:16]"
+  },
+  "bootstrap": {
+    "primary_contrasts": [
+      "Gancestor-H",
+      "Gancestor-P"
+    ],
+    "replicates": 2000,
+    "secondary_contrasts": [
+      "Gancestor-Gmixed"
+    ],
+    "seed": 20261029,
+    "unit": "whole_race"
+  },
+  "categorical": {
+    "catboost": {
+      "bagging_temperature": 1,
+      "bootstrap_type": "Bayesian",
+      "max_ctr_complexity": 1,
+      "one_hot_max_size": 32
+    },
+    "catboost_native_ordered_statistics": true,
+    "external_target_encoding": false,
+    "lightgbm": {
+      "cat_l2": 10,
+      "cat_smooth": 20,
+      "categorical_feature": "native",
+      "max_cat_threshold": 64,
+      "min_data_per_group": 20
+    },
+    "missing_token": "__MISSING__",
+    "rare_min_train_rows": 5,
+    "rare_token": "__RARE__",
+    "unseen_token": "__UNK__",
+    "xgboost": {
+      "enable_categorical": true,
+      "max_cat_threshold": 64,
+      "max_cat_to_onehot": 32,
+      "tree_method": "hist"
+    }
+  },
+  "families": [
+    "xgboost",
+    "lightgbm",
+    "catboost"
+  ],
+  "final_fit_count": 72,
+  "graph": {
+    "clusters": 64,
+    "dimensions": 64,
+    "epochs": 5,
+    "p": 1.0,
+    "q": 0.5,
+    "scope": "training_root_three_generation_graph",
+    "walk_length": 80,
+    "walks": 10,
+    "window": 5,
+    "workers": 4
+  },
+  "lock": {
+    "no_test_retuning": true,
+    "no_train_validation_refit": true,
+    "test_features_blocked_until_root_model_freeze_review": true,
+    "test_previously_seen": true
+  },
+  "matched_seeds": [
+    0,
+    1,
+    2
+  ],
+  "preregistered": false,
+  "recorded_date": "2026-09-13",
+  "refit": {
+    "fit_scope": "train_only",
+    "train_plus_validation": false
+  },
+  "runtime": {
+    "catboost": "1.2.8",
+    "lightgbm": "4.6.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pin_policy": "exact_versions_recorded_in_setup_report",
+    "python": "3.13.15",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.13.1",
+    "xgboost": "3.0.2"
+  },
+  "settings": [
+    "H",
+    "Gmixed",
+    "Gancestor",
+    "P"
+  ],
+  "shap": {
+    "explanation_model": "selected_family_seed0_final_train_only_refit",
+    "explanation_rows_minimum": 2000,
+    "feature_perturbation": "tree_path_dependent",
+    "group_attribution": "mean_abs_sum_of_group_phi",
+    "model_output": "raw_margin",
+    "sample_policy": "shuffle_complete_validation_races_until_at_least_2000_entries_and_record_ids",
+    "seed": 20260913,
+    "selection": "highest_mean_validation_AP_across_seeds_per_surface_and_S6_or_S7"
+  },
+  "spec_id": "experiment_spec_2026-09-13",
+  "split": {
+    "test": "2024-2025",
+    "train": "2010-2021",
+    "validation": "2022-2023"
+  },
+  "status": "locked",
+  "subgroups": {
+    "coverage": [
+      "direct",
+      "ancestor_fallback",
+      "missing"
+    ],
+    "history": [
+      "0",
+      "1",
+      "2",
+      "<3",
+      "3+"
+    ],
+    "hit3": "original_full_race_selection_contribution_with_denominator_3_times_complete_races"
+  },
+  "surfaces": [
+    "turf",
+    "dirt"
+  ],
+  "test_performance_opened": true,
+  "threshold": {
+    "b0": 0.5,
+    "fitted_settings": "validation_grid_0.01_to_0.99_step_0.01_max_f1",
+    "top3_independent": true
+  },
+  "tuning": {
+    "ap_tie_tolerance": 1e-06,
+    "candidates": {
+      "catboost": {
+        "c0": {
+          "depth": 5,
+          "l2_leaf_reg": 5.0,
+          "learning_rate": 0.05,
+          "random_strength": 1.0,
+          "rsm": 0.8
+        },
+        "c1": {
+          "depth": 6,
+          "l2_leaf_reg": 10.0,
+          "learning_rate": 0.03,
+          "random_strength": 1.0,
+          "rsm": 0.8
+        },
+        "c2": {
+          "depth": 7,
+          "l2_leaf_reg": 20.0,
+          "learning_rate": 0.03,
+          "random_strength": 1.0,
+          "rsm": 0.7
+        },
+        "c3": {
+          "depth": 4,
+          "l2_leaf_reg": 20.0,
+          "learning_rate": 0.06,
+          "random_strength": 2.0,
+          "rsm": 1.0
+        }
+      },
+      "lightgbm": {
+        "c0": {
+          "colsample_bytree": 0.8,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_samples": 50,
+          "num_leaves": 15,
+          "reg_alpha": 0.0,
+          "reg_lambda": 5.0,
+          "subsample": 0.8,
+          "subsample_freq": 1
+        },
+        "c1": {
+          "colsample_bytree": 0.8,
+          "learning_rate": 0.03,
+          "max_depth": 7,
+          "min_child_samples": 50,
+          "num_leaves": 31,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.8,
+          "subsample_freq": 1
+        },
+        "c2": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 9,
+          "min_child_samples": 100,
+          "num_leaves": 63,
+          "reg_alpha": 0.5,
+          "reg_lambda": 20.0,
+          "subsample": 0.7,
+          "subsample_freq": 1
+        },
+        "c3": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.06,
+          "max_depth": 4,
+          "min_child_samples": 100,
+          "num_leaves": 15,
+          "reg_alpha": 1.0,
+          "reg_lambda": 20.0,
+          "subsample": 1.0,
+          "subsample_freq": 0
+        }
+      },
+      "xgboost": {
+        "c0": {
+          "colsample_bytree": 0.8,
+          "learning_rate": 0.05,
+          "max_depth": 4,
+          "min_child_weight": 5,
+          "reg_alpha": 0.0,
+          "reg_lambda": 5.0,
+          "subsample": 0.8
+        },
+        "c1": {
+          "colsample_bytree": 0.8,
+          "learning_rate": 0.03,
+          "max_depth": 6,
+          "min_child_weight": 10,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.8
+        },
+        "c2": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 8,
+          "min_child_weight": 20,
+          "reg_alpha": 0.5,
+          "reg_lambda": 20.0,
+          "subsample": 0.7
+        },
+        "c3": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.06,
+          "max_depth": 3,
+          "min_child_weight": 1,
+          "reg_alpha": 1.0,
+          "reg_lambda": 20.0,
+          "subsample": 1.0
+        }
+      }
+    },
+    "candidates_per_family_setting_surface": 4,
+    "early_stopping_metric": "sklearn.metrics.average_precision_score",
+    "final_round_policy": "freeze_seed0_selected_round_for_seeds_0_1_2",
+    "fit_count": 96,
+    "max_rounds": 1200,
+    "patience": 75,
+    "shared": {
+      "early_stopping_patience": 75,
+      "max_rounds": 1200,
+      "metric": "sklearn.metrics.average_precision_score",
+      "objective": "binary",
+      "threads": 4
+    },
+    "threads": 4,
+    "tie_break": [
+      "higher_mean_hit_at_3",
+      "lower_best_round",
+      "lexicographic_candidate_id"
+    ],
+    "tuned_seed": 0
+  }
+}

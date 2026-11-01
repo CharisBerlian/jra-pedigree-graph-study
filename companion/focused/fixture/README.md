@@ -1,0 +1,5 @@
+# Focused study synthetic methods fixture, v5
+
+Run `python test_core.py` and `python test_metrics.py` in this directory. These synthetic fixtures exercise the actual ancestor encoder, parent aggregation, feature adapter and historical weighted-AP helpers, including ancestry collapse and ties, missing ancestors, same-day and focal-horse exclusions, frozen training maps, train-only category handling, complete-race score ties, duplicate sampled races and invalid inputs. The metrics fixture requires NumPy; no data, credentials, model fitting or network connection is needed.
+
+`feasibility.json` contains the separately audited train/validation ancestry-availability counts, not four-arm performance. `FILE_HASHES.json` records the package files. This local version is not a public archive and does not provide private datasets, trained models or end-to-end independent replication. Public distribution or access to restricted artifacts requires authorization and rights review. The focused scientific models have not yet been fitted.

@@ -1,0 +1,58 @@
+{
+  "prediction_files": 180,
+  "hashes_match": true,
+  "manifest_sha256": "41d116385d2b6b08e4974a05f026ee58cf3d65ad48d5b30622d11332c749e371",
+  "tuning_models": 60,
+  "refits": 180,
+  "selected_cap_records": [
+    {
+      "family": "catboost",
+      "surface": "dirt",
+      "setting": "S2",
+      "candidate": "c2",
+      "best_round": 1130
+    },
+    {
+      "family": "catboost",
+      "surface": "dirt",
+      "setting": "S4",
+      "candidate": "c2",
+      "best_round": 1150
+    },
+    {
+      "family": "catboost",
+      "surface": "turf",
+      "setting": "S2",
+      "candidate": "c2",
+      "best_round": 1192
+    },
+    {
+      "family": "catboost",
+      "surface": "turf",
+      "setting": "S3",
+      "candidate": "c3",
+      "best_round": 1166
+    },
+    {
+      "family": "catboost",
+      "surface": "turf",
+      "setting": "S5",
+      "candidate": "c2",
+      "best_round": 1170
+    },
+    {
+      "family": "catboost",
+      "surface": "turf",
+      "setting": "S6",
+      "candidate": "c2",
+      "best_round": 1195
+    },
+    {
+      "family": "xgboost",
+      "surface": "turf",
+      "setting": "S5",
+      "candidate": "c3",
+      "best_round": 1172
+    }
+  ]
+}

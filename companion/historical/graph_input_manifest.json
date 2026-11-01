@@ -1,0 +1,43 @@
+{
+  "purpose": "training-only pedigree resource pilot",
+  "created_utc": "2026-09-12T01:23:37.418775+00:00",
+  "scope": "2010-2021 eligible observed weekend JRA flat starters; union of three-generation pedigrees; undirected walks",
+  "counts": {
+    "training_horses": 62270,
+    "graph_nodes": 93474,
+    "graph_edges": 173412
+  },
+  "source_id_namespace": "Netkeiba (legacy pedigree database columns are named jbis_id)",
+  "source_files": [
+    "tmp/repaired_jra.db",
+    "tmp/features.db",
+    "local_jra_worker/data/raw_jbis_laptop.db",
+    "tmp/pedigree_patch.db"
+  ],
+  "outcome_columns_exported": false,
+  "validation_test_roots_exported": false,
+  "root_rule": "real race_date 20100101..20211231; flat; exclude race 201009040210 and statuses \u53d6\u6d88/\u9664\u5916",
+  "pending_before_prediction_experiments": [
+    "Reconcile incomplete races used by previous-start features (see completion_recheck_2026-09-11.md)",
+    "Refresh manuscript/data counts and fix the overflowing PDF table",
+    "Freeze production Node2Vec settings, cluster selection and unseen-horse fallback after resource pilot"
+  ],
+  "files": {
+    "graph_pilot.py": {
+      "bytes": 11320,
+      "sha256": "34e602f0b60cabebe66674692bc397f5860dea2a3318adfd02efd14deb4addc4"
+    },
+    "pedigree_edges.csv": {
+      "bytes": 4595440,
+      "sha256": "7c9fae4cf81b4a65b2ed8100b46bbd016a3e9ef198bca4a334bb14d841cfe6e7"
+    },
+    "requirements-graph.txt": {
+      "bytes": 193,
+      "sha256": "15e6e5a97c7f49b10b532d9f34d81c49c7510cdcf0cb411a4691e08db82f97f2"
+    },
+    "training_horses.txt": {
+      "bytes": 747240,
+      "sha256": "af00723e5ff648866a6f3e0debb2d906e0a6e914d0cb6c73b1c27ea383e0c655"
+    }
+  }
+}

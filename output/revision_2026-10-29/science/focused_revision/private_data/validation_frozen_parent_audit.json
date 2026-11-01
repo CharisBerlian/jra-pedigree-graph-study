@@ -1,0 +1,10 @@
+{
+  "application_source_sha256": "c5e14fc5934547a3c9a310e64d00bf43f23dd8f2424500f37f934b5d5cc03f16",
+  "checker_source_sha256": "a90c9ae782f3a8bc27f40f0f91391bd48f28926bd7cf1f36f3841f7c6b24ab89",
+  "map_sha256": "f07bbf61e92d67a70de28f5832751a0a27d5d6675d2111ceccd1cf10b2c63774",
+  "parent_feature_raw_sha256": "5b24c0de507695001bf1cfe4bdfa1b6314ecac4b4e4097014f3934690e0a6763",
+  "scope": "train/validation only; no test input",
+  "source_sha256": "98afbbdea692da9e46e723af27e4f132a14a59d59fb36e650513dc02480b4fa4",
+  "status": "pass",
+  "validation_rows_checked": 88106
+}

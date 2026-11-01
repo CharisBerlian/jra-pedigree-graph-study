@@ -1,0 +1,183 @@
+{
+  "authorization_sha256": "27f823180808ef154bfbfdf7ceca7036973a3f4cff4840b2f7a348acd9c2051f",
+  "coverage_and_parent_zero_counts": {
+    "Gancestor/seed0": {
+      "sha256": "61d8879b35ee97f3b43a4dd0304cacd66cd7825f13a8b072ad5359bf25e35e89",
+      "surfaces": {
+        "dirt": {
+          "coverage": {
+            "fallback": 45660
+          },
+          "entries": 45660,
+          "parent_zero_counts": {
+            "dam": 20027,
+            "damsire": 2371,
+            "sire": 13182
+          }
+        },
+        "turf": {
+          "coverage": {
+            "fallback": 43477
+          },
+          "entries": 43477,
+          "parent_zero_counts": {
+            "dam": 17941,
+            "damsire": 1982,
+            "sire": 13103
+          }
+        }
+      }
+    },
+    "Gancestor/seed1": {
+      "sha256": "7f64fc38fb3218b4142b536cdef35526cb092b5a5e1e9549c799abb927222dc5",
+      "surfaces": {
+        "dirt": {
+          "coverage": {
+            "fallback": 45660
+          },
+          "entries": 45660,
+          "parent_zero_counts": {
+            "dam": 20027,
+            "damsire": 2371,
+            "sire": 13182
+          }
+        },
+        "turf": {
+          "coverage": {
+            "fallback": 43477
+          },
+          "entries": 43477,
+          "parent_zero_counts": {
+            "dam": 17941,
+            "damsire": 1982,
+            "sire": 13103
+          }
+        }
+      }
+    },
+    "Gancestor/seed2": {
+      "sha256": "3873b145c3dd0a119fd4bb47876ad8addd6869661e924a3ab5799537525b71f3",
+      "surfaces": {
+        "dirt": {
+          "coverage": {
+            "fallback": 45660
+          },
+          "entries": 45660,
+          "parent_zero_counts": {
+            "dam": 20027,
+            "damsire": 2371,
+            "sire": 13182
+          }
+        },
+        "turf": {
+          "coverage": {
+            "fallback": 43477
+          },
+          "entries": 43477,
+          "parent_zero_counts": {
+            "dam": 17941,
+            "damsire": 1982,
+            "sire": 13103
+          }
+        }
+      }
+    },
+    "Gmixed/seed0": {
+      "sha256": "b55578855feab0c6c08665e58d4222a00092aeefc96427682939f9bad0d5fa22",
+      "surfaces": {
+        "dirt": {
+          "coverage": {
+            "direct": 5506,
+            "fallback": 40154
+          },
+          "entries": 45660,
+          "parent_zero_counts": {
+            "dam": 20027,
+            "damsire": 2371,
+            "sire": 13182
+          }
+        },
+        "turf": {
+          "coverage": {
+            "direct": 5641,
+            "fallback": 37836
+          },
+          "entries": 43477,
+          "parent_zero_counts": {
+            "dam": 17941,
+            "damsire": 1982,
+            "sire": 13103
+          }
+        }
+      }
+    },
+    "Gmixed/seed1": {
+      "sha256": "7c3a3ed779b376f49fe695ef0c5201fbfe066bab65bf523340f1136effaffa8a",
+      "surfaces": {
+        "dirt": {
+          "coverage": {
+            "direct": 5506,
+            "fallback": 40154
+          },
+          "entries": 45660,
+          "parent_zero_counts": {
+            "dam": 20027,
+            "damsire": 2371,
+            "sire": 13182
+          }
+        },
+        "turf": {
+          "coverage": {
+            "direct": 5641,
+            "fallback": 37836
+          },
+          "entries": 43477,
+          "parent_zero_counts": {
+            "dam": 17941,
+            "damsire": 1982,
+            "sire": 13103
+          }
+        }
+      }
+    },
+    "Gmixed/seed2": {
+      "sha256": "f372e0182c52d1caa3265c9c65c5dd51ab51b9d8ab4dc09b023e6113584d72a4",
+      "surfaces": {
+        "dirt": {
+          "coverage": {
+            "direct": 5506,
+            "fallback": 40154
+          },
+          "entries": 45660,
+          "parent_zero_counts": {
+            "dam": 20027,
+            "damsire": 2371,
+            "sire": 13182
+          }
+        },
+        "turf": {
+          "coverage": {
+            "direct": 5641,
+            "fallback": 37836
+          },
+          "entries": 43477,
+          "parent_zero_counts": {
+            "dam": 17941,
+            "damsire": 1982,
+            "sire": 13103
+          }
+        }
+      }
+    }
+  },
+  "exploratory": true,
+  "inference_report_sha256": "225f1bdb391f5ffeff06242ec550bdf96e551b273aceda3118add74c78433cd9",
+  "model_manifest_sha256": "09200d2194e71836e6093c03c4e5d35a395ab859ad2488633e7cbc0657c7715e",
+  "outcomes_sha256": "180bc06429cacb2531cc1205ee23f67c7afaf7fb30e74225922216dbcf3f5d88",
+  "outputs": {
+    "arm_metrics.csv": "d435ae23013a943ca6a4f0c3d56ad191dcdedf3fe347278c649da04d851b1e39",
+    "contrasts.csv": "bb215074a996fe8a7445e0cc6ef9a1d302f549eec30d114cf5e8f53e9eb9a46c",
+    "seed_metrics.csv": "6ebfdc438d718376f303b1b28aab73f432939e1c54e3986869ca67da19bf82a0"
+  },
+  "status": "complete"
+}

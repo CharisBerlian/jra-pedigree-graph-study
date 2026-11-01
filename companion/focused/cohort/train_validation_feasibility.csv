@@ -1,0 +1,5 @@
+split,surface,entries,ancestor_depth_1,ancestor_depth_2,ancestor_depth_3,sire_id_available,dam_id_available,damsire_id_available
+train,turf,271549,271549,0,0,271549,271549,271549
+train,dirt,277207,277207,0,0,277207,277207,277207
+validation,turf,42783,42580,202,1,42783,42783,42783
+validation,dirt,45323,45081,242,0,45323,45323,45323

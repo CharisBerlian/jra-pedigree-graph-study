@@ -1,0 +1,2212 @@
+{
+  "access_scope": "2010\u20132023 race ID/date projection and train/validation entries only; static pedigree snapshot loaded globally. An earlier preserved preparation computed an immutable whole-database checksum without decoding or selecting test outcomes.",
+  "candidate_grid": {
+    "catboost": {
+      "c0": {
+        "depth": 5,
+        "l2_leaf_reg": 5.0,
+        "learning_rate": 0.05,
+        "random_strength": 1.0,
+        "rsm": 0.8
+      },
+      "c1": {
+        "depth": 6,
+        "l2_leaf_reg": 10.0,
+        "learning_rate": 0.03,
+        "random_strength": 1.0,
+        "rsm": 0.8
+      },
+      "c2": {
+        "depth": 7,
+        "l2_leaf_reg": 20.0,
+        "learning_rate": 0.03,
+        "random_strength": 1.0,
+        "rsm": 0.7
+      },
+      "c3": {
+        "depth": 4,
+        "l2_leaf_reg": 20.0,
+        "learning_rate": 0.06,
+        "random_strength": 2.0,
+        "rsm": 1.0
+      }
+    },
+    "lightgbm": {
+      "c0": {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.05,
+        "max_depth": 5,
+        "min_child_samples": 50,
+        "num_leaves": 15,
+        "reg_alpha": 0.0,
+        "reg_lambda": 5.0,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      },
+      "c1": {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 7,
+        "min_child_samples": 50,
+        "num_leaves": 31,
+        "reg_alpha": 0.1,
+        "reg_lambda": 10.0,
+        "subsample": 0.8,
+        "subsample_freq": 1
+      },
+      "c2": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 9,
+        "min_child_samples": 100,
+        "num_leaves": 63,
+        "reg_alpha": 0.5,
+        "reg_lambda": 20.0,
+        "subsample": 0.7,
+        "subsample_freq": 1
+      },
+      "c3": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.06,
+        "max_depth": 4,
+        "min_child_samples": 100,
+        "num_leaves": 15,
+        "reg_alpha": 1.0,
+        "reg_lambda": 20.0,
+        "subsample": 1.0,
+        "subsample_freq": 0
+      }
+    },
+    "xgboost": {
+      "c0": {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "min_child_weight": 5,
+        "reg_alpha": 0.0,
+        "reg_lambda": 5.0,
+        "subsample": 0.8
+      },
+      "c1": {
+        "colsample_bytree": 0.8,
+        "learning_rate": 0.03,
+        "max_depth": 6,
+        "min_child_weight": 10,
+        "reg_alpha": 0.1,
+        "reg_lambda": 10.0,
+        "subsample": 0.8
+      },
+      "c2": {
+        "colsample_bytree": 0.7,
+        "learning_rate": 0.03,
+        "max_depth": 8,
+        "min_child_weight": 20,
+        "reg_alpha": 0.5,
+        "reg_lambda": 20.0,
+        "subsample": 0.7
+      },
+      "c3": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.06,
+        "max_depth": 3,
+        "min_child_weight": 1,
+        "reg_alpha": 1.0,
+        "reg_lambda": 20.0,
+        "subsample": 1.0
+      }
+    }
+  },
+  "candidate_order": [
+    "c0",
+    "c1",
+    "c2",
+    "c3"
+  ],
+  "categorical": {
+    "catboost": {
+      "bagging_temperature": 1,
+      "bootstrap_type": "Bayesian",
+      "max_ctr_complexity": 1,
+      "one_hot_max_size": 32
+    },
+    "catboost_native_ordered_statistics": true,
+    "external_target_encoding": false,
+    "lightgbm": {
+      "cat_l2": 10,
+      "cat_smooth": 20,
+      "categorical_feature": "native",
+      "max_cat_threshold": 64,
+      "min_data_per_group": 20
+    },
+    "missing_token": "__MISSING__",
+    "rare_min_train_rows": 5,
+    "rare_token": "__RARE__",
+    "unseen_token": "__UNK__",
+    "xgboost": {
+      "enable_categorical": true,
+      "max_cat_threshold": 64,
+      "max_cat_to_onehot": 32,
+      "tree_method": "hist"
+    }
+  },
+  "category_maps_sha256": "a9ef1d5b8e98d0b35f64b1867705475616ea9ff31538559408cc50a3978dd1ce",
+  "cells": [
+    {
+      "arm": "H",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "xgboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "H",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "xgboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "H",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "lightgbm",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "H",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "lightgbm",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "H",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "catboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "H",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "catboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "xgboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "xgboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "lightgbm",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "lightgbm",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "catboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gmixed",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "catboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "xgboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "xgboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "lightgbm",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "lightgbm",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "catboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "Gancestor",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "catboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "P",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "xgboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "P",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "xgboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "P",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "lightgbm",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "P",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "lightgbm",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "P",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "catboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "turf",
+      "tuning_seed": 0
+    },
+    {
+      "arm": "P",
+      "candidate_ids": [
+        "c0",
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "family": "catboost",
+      "refit_seeds": [
+        0,
+        1,
+        2
+      ],
+      "status": "not_launched",
+      "surface": "dirt",
+      "tuning_seed": 0
+    }
+  ],
+  "cohort_and_view_audit_sha256": "5af05acef4ac317f88bd49264568bb8e2925ef6c93a1ac546d6630bef5588858",
+  "cohort_key_sha256": "9c1950df63bb33b9385b7628d72d355aff1d4ddeb20886fd74b80f870478d954",
+  "cohort_non_graph_and_labels_sha256": "0f09e01eeace7a050fce71e257561b76a9d9dd6bbe215531db88627d99b42244",
+  "comparisons": {
+    "primary_contrasts": [
+      "Gancestor-H",
+      "Gancestor-P"
+    ],
+    "replicates": 2000,
+    "secondary_contrasts": [
+      "Gancestor-Gmixed"
+    ],
+    "seed": 20261029,
+    "unit": "whole_race"
+  },
+  "date_projection_sha256": "f5d5486195e05dbf7ddf6b019035856ce1628dd20b1b6e898a92f568cd046ae2",
+  "feature_schemas": {
+    "Gancestor": [
+      {
+        "name": "venue",
+        "type": "categorical"
+      },
+      {
+        "name": "distance",
+        "type": "numeric"
+      },
+      {
+        "name": "going",
+        "type": "categorical"
+      },
+      {
+        "name": "race_class",
+        "type": "categorical"
+      },
+      {
+        "name": "field_size",
+        "type": "numeric"
+      },
+      {
+        "name": "bracket",
+        "type": "numeric"
+      },
+      {
+        "name": "horse_number",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_carried",
+        "type": "numeric"
+      },
+      {
+        "name": "age",
+        "type": "numeric"
+      },
+      {
+        "name": "sex",
+        "type": "categorical"
+      },
+      {
+        "name": "body_weight",
+        "type": "numeric"
+      },
+      {
+        "name": "body_weight_change",
+        "type": "numeric"
+      },
+      {
+        "name": "hist_count",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist1",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist2",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_1",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_2",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_3",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_3",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_status",
+        "type": "categorical"
+      },
+      {
+        "name": "fallback_depth",
+        "type": "numeric"
+      },
+      {
+        "name": "ancestor_count",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_missing",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_0",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_1",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_2",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_3",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_4",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_5",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_6",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_7",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_8",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_9",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_10",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_11",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_12",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_13",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_14",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_15",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_16",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_17",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_18",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_19",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_20",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_21",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_22",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_23",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_24",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_25",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_26",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_27",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_28",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_29",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_30",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_31",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_32",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_33",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_34",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_35",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_36",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_37",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_38",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_39",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_40",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_41",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_42",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_43",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_44",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_45",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_46",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_47",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_48",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_49",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_50",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_51",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_52",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_53",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_54",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_55",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_56",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_57",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_58",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_59",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_60",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_61",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_62",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_63",
+        "type": "numeric"
+      },
+      {
+        "name": "graph_cluster",
+        "type": "categorical"
+      }
+    ],
+    "Gmixed": [
+      {
+        "name": "venue",
+        "type": "categorical"
+      },
+      {
+        "name": "distance",
+        "type": "numeric"
+      },
+      {
+        "name": "going",
+        "type": "categorical"
+      },
+      {
+        "name": "race_class",
+        "type": "categorical"
+      },
+      {
+        "name": "field_size",
+        "type": "numeric"
+      },
+      {
+        "name": "bracket",
+        "type": "numeric"
+      },
+      {
+        "name": "horse_number",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_carried",
+        "type": "numeric"
+      },
+      {
+        "name": "age",
+        "type": "numeric"
+      },
+      {
+        "name": "sex",
+        "type": "categorical"
+      },
+      {
+        "name": "body_weight",
+        "type": "numeric"
+      },
+      {
+        "name": "body_weight_change",
+        "type": "numeric"
+      },
+      {
+        "name": "hist_count",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist1",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist2",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_1",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_2",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_3",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_3",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_status",
+        "type": "categorical"
+      },
+      {
+        "name": "fallback_depth",
+        "type": "numeric"
+      },
+      {
+        "name": "ancestor_count",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_missing",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_0",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_1",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_2",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_3",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_4",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_5",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_6",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_7",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_8",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_9",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_10",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_11",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_12",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_13",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_14",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_15",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_16",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_17",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_18",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_19",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_20",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_21",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_22",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_23",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_24",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_25",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_26",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_27",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_28",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_29",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_30",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_31",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_32",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_33",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_34",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_35",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_36",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_37",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_38",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_39",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_40",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_41",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_42",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_43",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_44",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_45",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_46",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_47",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_48",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_49",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_50",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_51",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_52",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_53",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_54",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_55",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_56",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_57",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_58",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_59",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_60",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_61",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_62",
+        "type": "numeric"
+      },
+      {
+        "name": "embedding_63",
+        "type": "numeric"
+      },
+      {
+        "name": "graph_cluster",
+        "type": "categorical"
+      }
+    ],
+    "H": [
+      {
+        "name": "venue",
+        "type": "categorical"
+      },
+      {
+        "name": "distance",
+        "type": "numeric"
+      },
+      {
+        "name": "going",
+        "type": "categorical"
+      },
+      {
+        "name": "race_class",
+        "type": "categorical"
+      },
+      {
+        "name": "field_size",
+        "type": "numeric"
+      },
+      {
+        "name": "bracket",
+        "type": "numeric"
+      },
+      {
+        "name": "horse_number",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_carried",
+        "type": "numeric"
+      },
+      {
+        "name": "age",
+        "type": "numeric"
+      },
+      {
+        "name": "sex",
+        "type": "categorical"
+      },
+      {
+        "name": "body_weight",
+        "type": "numeric"
+      },
+      {
+        "name": "body_weight_change",
+        "type": "numeric"
+      },
+      {
+        "name": "hist_count",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist1",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist2",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_1",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_2",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_3",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_3",
+        "type": "numeric"
+      }
+    ],
+    "P": [
+      {
+        "name": "venue",
+        "type": "categorical"
+      },
+      {
+        "name": "distance",
+        "type": "numeric"
+      },
+      {
+        "name": "going",
+        "type": "categorical"
+      },
+      {
+        "name": "race_class",
+        "type": "categorical"
+      },
+      {
+        "name": "field_size",
+        "type": "numeric"
+      },
+      {
+        "name": "bracket",
+        "type": "numeric"
+      },
+      {
+        "name": "horse_number",
+        "type": "numeric"
+      },
+      {
+        "name": "weight_carried",
+        "type": "numeric"
+      },
+      {
+        "name": "age",
+        "type": "numeric"
+      },
+      {
+        "name": "sex",
+        "type": "categorical"
+      },
+      {
+        "name": "body_weight",
+        "type": "numeric"
+      },
+      {
+        "name": "body_weight_change",
+        "type": "numeric"
+      },
+      {
+        "name": "hist_count",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist1",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist2",
+        "type": "numeric"
+      },
+      {
+        "name": "has_hist3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_1",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_1",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_1",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_2",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_2",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_2",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_finish_pos_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_norm_finish_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_field_size_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_distance_3",
+        "type": "numeric"
+      },
+      {
+        "name": "prior_surface_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_going_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_race_class_3",
+        "type": "categorical"
+      },
+      {
+        "name": "prior_weight_carried_3",
+        "type": "numeric"
+      },
+      {
+        "name": "days_since_3",
+        "type": "numeric"
+      },
+      {
+        "name": "sire_available",
+        "type": "numeric"
+      },
+      {
+        "name": "sire_prior_count",
+        "type": "numeric"
+      },
+      {
+        "name": "sire_prior_rate",
+        "type": "numeric"
+      },
+      {
+        "name": "dam_available",
+        "type": "numeric"
+      },
+      {
+        "name": "dam_prior_count",
+        "type": "numeric"
+      },
+      {
+        "name": "dam_prior_rate",
+        "type": "numeric"
+      },
+      {
+        "name": "damsire_available",
+        "type": "numeric"
+      },
+      {
+        "name": "damsire_prior_count",
+        "type": "numeric"
+      },
+      {
+        "name": "damsire_prior_rate",
+        "type": "numeric"
+      }
+    ]
+  },
+  "graph_artifacts": [
+    {
+      "centroid_sha256": "f72fe56a676d15cf33a1ffa71739bff52bef4f179290f955fb65f7b780b964d8",
+      "graph_sha256": "5cdd9acf5bd3ad3dc749300cc2fb985163233fc4d30faae0910b2b9193976acc",
+      "original_graph_python": "3.12.13",
+      "report_sha256": "5e358dbebee6c3d12b1ef03467d7dd9e7b1ebe4e95c47a4a90505c4947272cd4",
+      "seed": 0,
+      "vector_sha256": "7451b79270c8f272e57f93b6fa91ba6bac977e75280da21c8bc46320aa0faa74"
+    },
+    {
+      "centroid_sha256": "f0f463647d71b6eb1562018510e7f6d7929428e0420ed93ad7906de349ba1865",
+      "graph_sha256": "5cdd9acf5bd3ad3dc749300cc2fb985163233fc4d30faae0910b2b9193976acc",
+      "original_graph_python": "3.12.13",
+      "report_sha256": "734fef218e156e8f7f421460b84dad5af342c8d80c492e55b668cad0b963406c",
+      "seed": 1,
+      "vector_sha256": "0b04d12000f3542c507e24b32e30af8afd48c000e1abce0f0564d1525876b833"
+    },
+    {
+      "centroid_sha256": "4bc7b7ccd93ea61ee92a85d9da86d450973cf38c4e23f18005438ae364e3aa37",
+      "graph_sha256": "5cdd9acf5bd3ad3dc749300cc2fb985163233fc4d30faae0910b2b9193976acc",
+      "original_graph_python": "3.12.13",
+      "report_sha256": "35d6a018d07cd48fb4f41d4d3899c8198e299630dcf5dd9d1e9767b76e80c310",
+      "seed": 2,
+      "vector_sha256": "a32153ea56f0a3502b29273a00aabf96b46cb5184f6e1b92dbffcfa17e48bc7c"
+    }
+  ],
+  "graph_descriptor_serialization": {
+    "absent_train_categories": "unknown token code 1; blanks use missing token code 0; counts <5 use rare token code 2",
+    "cluster": "categorical decimal centroid index 0..63 or literal MISSING",
+    "count": "numeric integer >=0",
+    "depth": "numeric integer 1..3 or blank (NaN after numeric parsing)",
+    "missing": "numeric 0 or 1",
+    "status": "categorical literal fallback or missing"
+  },
+  "metrics": {
+    "AP": "tie-grouped entry average precision; duplicate sampled races count with multiplicity",
+    "Hit@3": "sum labels of top three by score descending, horse number ascending, horse ID ascending, divided by 3; mean across all complete races",
+    "bootstrap": "2000 shared whole-race draws per surface using numpy default_rng(20261029); percentile 2.5,97.5 on mean paired seed differences",
+    "interpretation": "Hit@3 difference and interval multiplied by 300 equals additional correct selections per 100 races; no profit/equivalence threshold",
+    "invalid": "non-finite/out-of-range scores, invalid labels, duplicate keys or incomplete/<3 rosters stop"
+  },
+  "normalized_utf8_text_sha256": {
+    "kaggle/experiment_features.py": "3a4fc0d2192beb39c6e9c3ed62c4528c1a84fa4d5c5c98d41e75e49e1c7ed27e",
+    "kaggle/graph_pilot.py": "34e602f0b60cabebe66674692bc397f5860dea2a3318adfd02efd14deb4addc4",
+    "kaggle/prepare_prediction.py": "724096edeaffb40c01166e41bac458ea91aabc52d19342eb65833e602a368060",
+    "kaggle/run_experiments.py": "786e4db859c9a4fa17dba3c61a92bf110d3f618f6d2a0b787c47e4c6d9154b87",
+    "output/icdees_focused_2026-09-18/companion/code/evaluate_locked.py": "10b598ff5bad225925b847c0b6778ce2abf7fbaf6297690b4b7f18a44b50c363",
+    "output/icdees_focused_2026-09-18/companion/code/evaluate_locked_test_results.py": "95e8a9ebad14c65b755d27c0178b0a64f04c8765e24614d917b8bcc0cd06c4db",
+    "output/revision_2026-10-29/science/assemble_cutoff.py": "5accbf7adec2a2002c5d1dac5b2df418c8feda004e7bab03f52d860d74158711",
+    "output/revision_2026-10-29/science/focused_revision/PROTOCOL.md": "ec6070feb67f8218848ae7693dcf586ebecdee601e3203c7d99a27b3c087e351",
+    "output/revision_2026-10-29/science/focused_revision/REMOTE_PREPARATION_PLAN.md": "8ac5625cd36d0ea9c89dcb2c840ddd42047bb18c451f857db095ef9075f87a22",
+    "output/revision_2026-10-29/science/focused_revision/ancestry.py": "b3f8ef803e30e7719371a6f89842974ec579eb9dac75a6fb637a81af0bbf7c64",
+    "output/revision_2026-10-29/science/focused_revision/assemble_features.py": "c1ecc7b8b2c22d59ff34b175f46c9d9449898a51dcb6f64702023ad896b152c9",
+    "output/revision_2026-10-29/science/focused_revision/audit_feature_views.py": "126b4ddaba8bce3d1c079b9a6c3e323229a8faaf57ad601bf4f20496b08a78ac",
+    "output/revision_2026-10-29/science/focused_revision/build_focused_jobs.py": "6a3fb778787991096aca3a84fedb08d45bc21fc1053f60fa88d736dd0b3ab23b",
+    "output/revision_2026-10-29/science/focused_revision/build_model_transport.py": "b923cc523f1042772694f4d2b2e10baf372eda62717f8d295f587b14f7cac156",
+    "output/revision_2026-10-29/science/focused_revision/build_remote_preparation_job.py": "367e0a3e60482b8ae025ed4827d8aa19b50029e86ac638325c38480aa8e03845",
+    "output/revision_2026-10-29/science/focused_revision/check_private_staging.py": "285a9db28af555189dc48a1169200dc788bccc6790631f1360abb6ac56dbc2eb",
+    "output/revision_2026-10-29/science/focused_revision/feature_adapter.py": "3c8a9c293ae9bf16ba58bfd06f1b37829235d7ed734f11b3ecf5a68748e7b0c8",
+    "output/revision_2026-10-29/science/focused_revision/make_prefit_manifest.py": "9143135ecff5869c033c096f8b7a0a7417ff6b155095e18175f51a4e1b54182d",
+    "output/revision_2026-10-29/science/focused_revision/metrics.py": "0a79709dde1e379b1f386de7b942cce4d4ec43090a0b71e531c537d4a1c0a534",
+    "output/revision_2026-10-29/science/focused_revision/parent_control.py": "29176a06040954d98d6854d65914e9d77c8e75c2bd7a55f4f45907e1a5b945c8",
+    "output/revision_2026-10-29/science/focused_revision/prepare_parent_data.py": "06adbb14428e1b30aa976cc92fdb68ee6d6cfd71b0b6ea28c606dacd5eb958c6",
+    "output/revision_2026-10-29/science/focused_revision/remote_preparation.py": "04ef3d099cded7d23388e5353e548793513865e6f780a6a1e1cb99dc62ba53f9",
+    "output/revision_2026-10-29/science/focused_revision/remote_workspace.py": "a91fb250f7e399349be821694b49f1afe626334468449888ea10b7378c76e7d0",
+    "output/revision_2026-10-29/science/focused_revision/test_core.py": "0dfe9da5a2b92e84966bd1ee264932d4a7ec214da5ce78cc15ae1635f0d958c8",
+    "output/revision_2026-10-29/science/focused_revision/test_metrics.py": "be2803e9ac7504d294f5338e155091978ab77b9f53bfcf6646c857b7464e1bc0",
+    "output/revision_2026-10-29/science/focused_revision/test_remote_workspace.py": "f798cdef31122446c7e9693d5c0429e8d2064d384311fe1f241651e80adcca08",
+    "output/revision_2026-10-29/science/focused_revision/test_transport_integration.py": "55e1c20dd7685c9a0d1ff2cff4b7c88c53220399e548b2bddff447048736b8c2",
+    "output/revision_2026-10-29/science/focused_revision/verify_remote_parent.py": "d06c513f2aba6d62835b714c653559c46c7e7f8517e0310ee43e9241d4707d2d",
+    "output/revision_2026-10-29/science/focused_revision/verify_remote_views.py": "b6bc5afc73b2e686e4406e9abd006e7090352c8c4daaa0b0b3816f42f20a69c6"
+  },
+  "parent_feature_construction": "P uses supervised same-surface prior-outcome summaries, strictly earlier dates, focal-horse exclusion and frozen end-2021 maps. categorical.external_target_encoding=false applies only to categorical-code preprocessing; P is outcome-derived.",
+  "parent_feature_sha256": "d40abb179dc519e6f05a10b2918347d7236bad065d71652701e1acad3e519d3c",
+  "parent_manifest_sha256": "a982c0cebdb4baf4667235119cf3505d305ded4b1e157a8cd8d17365b5a71fe3",
+  "parent_map_sha256": "f07bbf61e92d67a70de28f5832751a0a27d5d6675d2111ceccd1cf10b2c63774",
+  "race_count": 44848,
+  "runtime": {
+    "catboost": "1.2.8",
+    "lightgbm": "4.6.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pin_policy": "exact_versions_recorded_in_setup_report",
+    "python": "3.13.15",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.13.1",
+    "xgboost": "3.0.2"
+  },
+  "source_sha256": {
+    "kaggle/experiment_features.py": "3a4fc0d2192beb39c6e9c3ed62c4528c1a84fa4d5c5c98d41e75e49e1c7ed27e",
+    "kaggle/graph_pilot.py": "34e602f0b60cabebe66674692bc397f5860dea2a3318adfd02efd14deb4addc4",
+    "kaggle/prepare_prediction.py": "724096edeaffb40c01166e41bac458ea91aabc52d19342eb65833e602a368060",
+    "kaggle/run_experiments.py": "786e4db859c9a4fa17dba3c61a92bf110d3f618f6d2a0b787c47e4c6d9154b87",
+    "output/icdees_focused_2026-09-18/companion/code/evaluate_locked.py": "10b598ff5bad225925b847c0b6778ce2abf7fbaf6297690b4b7f18a44b50c363",
+    "output/icdees_focused_2026-09-18/companion/code/evaluate_locked_test_results.py": "95e8a9ebad14c65b755d27c0178b0a64f04c8765e24614d917b8bcc0cd06c4db",
+    "output/revision_2026-10-29/science/assemble_cutoff.py": "5accbf7adec2a2002c5d1dac5b2df418c8feda004e7bab03f52d860d74158711",
+    "output/revision_2026-10-29/science/focused_revision/PROTOCOL.md": "ec6070feb67f8218848ae7693dcf586ebecdee601e3203c7d99a27b3c087e351",
+    "output/revision_2026-10-29/science/focused_revision/REMOTE_PREPARATION_PLAN.md": "8ac5625cd36d0ea9c89dcb2c840ddd42047bb18c451f857db095ef9075f87a22",
+    "output/revision_2026-10-29/science/focused_revision/ancestry.py": "b3f8ef803e30e7719371a6f89842974ec579eb9dac75a6fb637a81af0bbf7c64",
+    "output/revision_2026-10-29/science/focused_revision/assemble_features.py": "c1ecc7b8b2c22d59ff34b175f46c9d9449898a51dcb6f64702023ad896b152c9",
+    "output/revision_2026-10-29/science/focused_revision/audit_feature_views.py": "126b4ddaba8bce3d1c079b9a6c3e323229a8faaf57ad601bf4f20496b08a78ac",
+    "output/revision_2026-10-29/science/focused_revision/build_focused_jobs.py": "6a3fb778787991096aca3a84fedb08d45bc21fc1053f60fa88d736dd0b3ab23b",
+    "output/revision_2026-10-29/science/focused_revision/build_model_transport.py": "b923cc523f1042772694f4d2b2e10baf372eda62717f8d295f587b14f7cac156",
+    "output/revision_2026-10-29/science/focused_revision/build_remote_preparation_job.py": "367e0a3e60482b8ae025ed4827d8aa19b50029e86ac638325c38480aa8e03845",
+    "output/revision_2026-10-29/science/focused_revision/check_private_staging.py": "285a9db28af555189dc48a1169200dc788bccc6790631f1360abb6ac56dbc2eb",
+    "output/revision_2026-10-29/science/focused_revision/feature_adapter.py": "3c8a9c293ae9bf16ba58bfd06f1b37829235d7ed734f11b3ecf5a68748e7b0c8",
+    "output/revision_2026-10-29/science/focused_revision/make_prefit_manifest.py": "9143135ecff5869c033c096f8b7a0a7417ff6b155095e18175f51a4e1b54182d",
+    "output/revision_2026-10-29/science/focused_revision/metrics.py": "0a79709dde1e379b1f386de7b942cce4d4ec43090a0b71e531c537d4a1c0a534",
+    "output/revision_2026-10-29/science/focused_revision/parent_control.py": "29176a06040954d98d6854d65914e9d77c8e75c2bd7a55f4f45907e1a5b945c8",
+    "output/revision_2026-10-29/science/focused_revision/prepare_parent_data.py": "06adbb14428e1b30aa976cc92fdb68ee6d6cfd71b0b6ea28c606dacd5eb958c6",
+    "output/revision_2026-10-29/science/focused_revision/remote_preparation.py": "04ef3d099cded7d23388e5353e548793513865e6f780a6a1e1cb99dc62ba53f9",
+    "output/revision_2026-10-29/science/focused_revision/remote_workspace.py": "a91fb250f7e399349be821694b49f1afe626334468449888ea10b7378c76e7d0",
+    "output/revision_2026-10-29/science/focused_revision/test_core.py": "0dfe9da5a2b92e84966bd1ee264932d4a7ec214da5ce78cc15ae1635f0d958c8",
+    "output/revision_2026-10-29/science/focused_revision/test_metrics.py": "be2803e9ac7504d294f5338e155091978ab77b9f53bfcf6646c857b7464e1bc0",
+    "output/revision_2026-10-29/science/focused_revision/test_remote_workspace.py": "f798cdef31122446c7e9693d5c0429e8d2064d384311fe1f241651e80adcca08",
+    "output/revision_2026-10-29/science/focused_revision/test_transport_integration.py": "55e1c20dd7685c9a0d1ff2cff4b7c88c53220399e548b2bddff447048736b8c2",
+    "output/revision_2026-10-29/science/focused_revision/verify_remote_parent.py": "d06c513f2aba6d62835b714c653559c46c7e7f8517e0310ee43e9241d4707d2d",
+    "output/revision_2026-10-29/science/focused_revision/verify_remote_views.py": "b6bc5afc73b2e686e4406e9abd006e7090352c8c4daaa0b0b3816f42f20a69c6"
+  },
+  "spec_sha256": "82c9738e38d1fce3970205f21694b853f44efbc8335aa99bb3e45926907d39e7",
+  "staging_closure_audit_sha256": "482b26b4d6b2e4b0d024c780c7f9eeb7de34a10c26abe3477ca8a48eb3348eda",
+  "status": "awaiting_root_prefit_review",
+  "supersedes_prefit_sha256": "69d06117027d26d96a102842cba3ded0752cee9bd5122841d7fbddea64a3214d",
+  "synthetic_release_manifest_sha256": "d65b9ffceed29ee989ef85a19109917d1e4ef9bae3c1e9dda4d48f7ca8e445ef",
+  "test_observations_decoded_in_this_study": false,
+  "test_previously_seen": true,
+  "training_rows": 548756,
+  "tuning": {
+    "ap_tie_tolerance": 1e-06,
+    "candidates": {
+      "catboost": {
+        "c0": {
+          "depth": 5,
+          "l2_leaf_reg": 5.0,
+          "learning_rate": 0.05,
+          "random_strength": 1.0,
+          "rsm": 0.8
+        },
+        "c1": {
+          "depth": 6,
+          "l2_leaf_reg": 10.0,
+          "learning_rate": 0.03,
+          "random_strength": 1.0,
+          "rsm": 0.8
+        },
+        "c2": {
+          "depth": 7,
+          "l2_leaf_reg": 20.0,
+          "learning_rate": 0.03,
+          "random_strength": 1.0,
+          "rsm": 0.7
+        },
+        "c3": {
+          "depth": 4,
+          "l2_leaf_reg": 20.0,
+          "learning_rate": 0.06,
+          "random_strength": 2.0,
+          "rsm": 1.0
+        }
+      },
+      "lightgbm": {
+        "c0": {
+          "colsample_bytree": 0.8,
+          "learning_rate": 0.05,
+          "max_depth": 5,
+          "min_child_samples": 50,
+          "num_leaves": 15,
+          "reg_alpha": 0.0,
+          "reg_lambda": 5.0,
+          "subsample": 0.8,
+          "subsample_freq": 1
+        },
+        "c1": {
+          "colsample_bytree": 0.8,
+          "learning_rate": 0.03,
+          "max_depth": 7,
+          "min_child_samples": 50,
+          "num_leaves": 31,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.8,
+          "subsample_freq": 1
+        },
+        "c2": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 9,
+          "min_child_samples": 100,
+          "num_leaves": 63,
+          "reg_alpha": 0.5,
+          "reg_lambda": 20.0,
+          "subsample": 0.7,
+          "subsample_freq": 1
+        },
+        "c3": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.06,
+          "max_depth": 4,
+          "min_child_samples": 100,
+          "num_leaves": 15,
+          "reg_alpha": 1.0,
+          "reg_lambda": 20.0,
+          "subsample": 1.0,
+          "subsample_freq": 0
+        }
+      },
+      "xgboost": {
+        "c0": {
+          "colsample_bytree": 0.8,
+          "learning_rate": 0.05,
+          "max_depth": 4,
+          "min_child_weight": 5,
+          "reg_alpha": 0.0,
+          "reg_lambda": 5.0,
+          "subsample": 0.8
+        },
+        "c1": {
+          "colsample_bytree": 0.8,
+          "learning_rate": 0.03,
+          "max_depth": 6,
+          "min_child_weight": 10,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "subsample": 0.8
+        },
+        "c2": {
+          "colsample_bytree": 0.7,
+          "learning_rate": 0.03,
+          "max_depth": 8,
+          "min_child_weight": 20,
+          "reg_alpha": 0.5,
+          "reg_lambda": 20.0,
+          "subsample": 0.7
+        },
+        "c3": {
+          "colsample_bytree": 1.0,
+          "learning_rate": 0.06,
+          "max_depth": 3,
+          "min_child_weight": 1,
+          "reg_alpha": 1.0,
+          "reg_lambda": 20.0,
+          "subsample": 1.0
+        }
+      }
+    },
+    "candidates_per_family_setting_surface": 4,
+    "early_stopping_metric": "sklearn.metrics.average_precision_score",
+    "final_round_policy": "freeze_seed0_selected_round_for_seeds_0_1_2",
+    "fit_count": 96,
+    "max_rounds": 1200,
+    "patience": 75,
+    "shared": {
+      "early_stopping_patience": 75,
+      "max_rounds": 1200,
+      "metric": "sklearn.metrics.average_precision_score",
+      "objective": "binary",
+      "threads": 4
+    },
+    "threads": 4,
+    "tie_break": [
+      "higher_mean_hit_at_3",
+      "lower_best_round",
+      "lexicographic_candidate_id"
+    ],
+    "tuned_seed": 0
+  },
+  "validation_rows": 88106,
+  "view_summaries": [
+    {
+      "parent_feature_sha256": "d40abb179dc519e6f05a10b2918347d7236bad065d71652701e1acad3e519d3c",
+      "payload_sha256": "9b28fb046619c351f9495ccd13d32dc52fe06c83622992aff878c3277119da31",
+      "raw_sha256": "3d1be2329508c13779fd7c3c4ff4f755f0775bcac33932e020c31545b2b4f842",
+      "rows": 636862,
+      "seed": 0,
+      "sidecar_sha256": "55a890eda56bb27e2b1b78ea802fbcdba81b1b368a1f3e64ad11d5a3f8e1d5ed",
+      "view": "Gmixed"
+    },
+    {
+      "parent_feature_sha256": "d40abb179dc519e6f05a10b2918347d7236bad065d71652701e1acad3e519d3c",
+      "payload_sha256": "4ffc06d54e2f2504ab2487a3c84aab8aba5c4fb8f190e14b37e02c72b7cd703e",
+      "raw_sha256": "53a0888a9b026e936894ff0ed4a51cd1914e8a17315de6d44b00ed6ce214bb75",
+      "rows": 636862,
+      "seed": 0,
+      "sidecar_sha256": "10a71052eba5cf8fafa24d639307d5be074d7c03aae2a01f2439f6320e7dfa22",
+      "view": "Gancestor"
+    },
+    {
+      "parent_feature_sha256": "d40abb179dc519e6f05a10b2918347d7236bad065d71652701e1acad3e519d3c",
+      "payload_sha256": "e4af74906f626883e73f5de9f3554da70ba38d7e4dc2ce220d5a154e1490b5f8",
+      "raw_sha256": "16dc905b870d2e63c8812bada774e1447c1b3d5f00793f14c33b7d95a78a7068",
+      "rows": 636862,
+      "seed": 1,
+      "sidecar_sha256": "a13095c5a262cbdc9228c92821bf189db61f77eb69437c560d2835d2395b4085",
+      "view": "Gmixed"
+    },
+    {
+      "parent_feature_sha256": "d40abb179dc519e6f05a10b2918347d7236bad065d71652701e1acad3e519d3c",
+      "payload_sha256": "db87833bf8df36c4f1bd4943a88f0363cf84a946df854aa4b37c6831e2ea6f65",
+      "raw_sha256": "1617717451cb9bb37512d3b1d1e7cfca822bff44339de03ea7e653b835b845da",
+      "rows": 636862,
+      "seed": 1,
+      "sidecar_sha256": "bf75c26a3853b1d61ab844c133d5069b2afb1e1c61d90cac3a6a01d745541830",
+      "view": "Gancestor"
+    },
+    {
+      "parent_feature_sha256": "d40abb179dc519e6f05a10b2918347d7236bad065d71652701e1acad3e519d3c",
+      "payload_sha256": "5714633038ed884d41a303e80db7bc969e106e52735a45e289b8d454b9dd94b1",
+      "raw_sha256": "ea3b042c256e63409836e9e6ffc105c93ce39f3d5de8ac3f77facc306e134693",
+      "rows": 636862,
+      "seed": 2,
+      "sidecar_sha256": "b582147cad05c2964725e1a0c1b48ac63431b889550b206ff076e70c55e0f2a8",
+      "view": "Gmixed"
+    },
+    {
+      "parent_feature_sha256": "d40abb179dc519e6f05a10b2918347d7236bad065d71652701e1acad3e519d3c",
+      "payload_sha256": "86eb8e358bd866180f08ec7aa7c504a124bb07941c92f8a1cf0c16c9d1f06fe6",
+      "raw_sha256": "ced1c1cdd7e944141bbd552c37c05e586a09eee36c017f93191ee849f92ddb98",
+      "rows": 636862,
+      "seed": 2,
+      "sidecar_sha256": "d850bdd8fbd901368ae0c184aa5383ffa6c81185534dbaa1b998fc892923ea34",
+      "view": "Gancestor"
+    }
+  ]
+}

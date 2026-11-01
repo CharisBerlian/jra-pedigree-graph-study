@@ -1,0 +1,6 @@
+{
+  "authorized_at_utc": "2026-10-30T03:19:37.522677+00:00",
+  "authorized_by_root": true,
+  "frozen_manifest_sha256": "09200d2194e71836e6093c03c4e5d35a395ab859ad2488633e7cbc0657c7715e",
+  "scope": "exploratory test inference and evaluation"
+}

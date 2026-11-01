@@ -1,0 +1,11 @@
+{
+  "aggregation": "mean of per-seed AP differences, not averaged probabilities",
+  "exploratory": true,
+  "interaction": "subgroup pedigree AP increment minus 3+ increment in identical bootstrap samples",
+  "manifest_sha256": "41d116385d2b6b08e4974a05f026ee58cf3d65ad48d5b30622d11332c749e371",
+  "models_refit": false,
+  "replicates": 2000,
+  "seed": 20260913,
+  "status": "complete",
+  "unit": "all whole races within surface; subgroup filter after sampling"
+}

@@ -1,0 +1,41 @@
+{
+  "entries_by_surface": {
+    "dirt": 45660,
+    "turf": 43477
+  },
+  "graph_parent_quality_sha256": "7445914ef8b24f971dc78cda06d4e7fabc79cb67dab471695daa7dfcf3951a50",
+  "inference_report_sha256": "225f1bdb391f5ffeff06242ec550bdf96e551b273aceda3118add74c78433cd9",
+  "model_freeze_sha256": "09200d2194e71836e6093c03c4e5d35a395ab859ad2488633e7cbc0657c7715e",
+  "native_view_runtime_numpy": "1.26.4",
+  "native_view_runtime_python": "3.13.15",
+  "outputs": {
+    "test_joint_distribution.csv": "531d90ebbcbc78a1a818d66696d0bdb00da12efdc23d2bbb092b4c41ca57b691",
+    "test_parent_availability.csv": "6c74acd34fe235165035cb1163997207eee59ecdf1f76e05d34247024b7b515d",
+    "test_representation.csv": "5dbedebada92797345f06f36572e7fa5ad632a301edb60d8e5ec40b5b52f33f1",
+    "train_validation_feasibility.csv": "a0768a0871a7dcc4f261baa78395d89a2151928707935046060d74f4ec0288b8"
+  },
+  "qa_numpy": "2.4.4",
+  "qa_python": "3.14.3",
+  "races_by_surface": {
+    "dirt": 3219,
+    "turf": 3246
+  },
+  "reporter_sha256": "ef4746a11aa0e8c4aeeb810e0bd974a3948e55f540bfab006f0b7ae4b4079182",
+  "rows_per_view": 89137,
+  "scope": "Counts of label-free entries; cross-view P parity, complete race rosters, graph coverage and parent availability. No predictions, outcome labels or test performance were read.",
+  "status": "label_free_aggregate_complete",
+  "test_labels_read": false,
+  "test_metrics_read": false,
+  "test_view_report_sha256": "774929c47352c3d808aca60804ab6583e6fbc3aa7e1b343372295ac704ff15ad",
+  "train_validation_feasibility_sha256": "66c92c84c7fbb246b2528d7f47dad003244a249390a7b228ef3db8b08bbd7ecb",
+  "view_file_sha256": {
+    "Gancestor/seed0": "61d8879b35ee97f3b43a4dd0304cacd66cd7825f13a8b072ad5359bf25e35e89",
+    "Gancestor/seed1": "7f64fc38fb3218b4142b536cdef35526cb092b5a5e1e9549c799abb927222dc5",
+    "Gancestor/seed2": "3873b145c3dd0a119fd4bb47876ad8addd6869661e924a3ab5799537525b71f3",
+    "Gmixed/seed0": "b55578855feab0c6c08665e58d4222a00092aeefc96427682939f9bad0d5fa22",
+    "Gmixed/seed1": "7c3a3ed779b376f49fe695ef0c5201fbfe066bab65bf523340f1136effaffa8a",
+    "Gmixed/seed2": "f372e0182c52d1caa3265c9c65c5dd51ab51b9d8ab4dc09b023e6113584d72a4"
+  },
+  "views": 6,
+  "views_quality_sha256": "21c08cee7b9d28cecb4eef8a12eb3b932d99faccd2bf835da5226df58b7a5fc2"
+}

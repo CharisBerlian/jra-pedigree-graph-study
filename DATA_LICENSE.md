@@ -1,0 +1,1 @@
+Research data and aggregate results are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/ . Attribute the study and acknowledge Netkeiba. Code and third-party assets have separate licenses; see README.md.

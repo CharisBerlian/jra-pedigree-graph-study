@@ -1,0 +1,287 @@
+{
+  "spec_id": "experiment_spec_2026-09-13",
+  "recorded_date": "2026-09-13",
+  "status": "locked",
+  "test_performance_opened": false,
+  "preregistered": false,
+  "families": [
+    "xgboost",
+    "lightgbm",
+    "catboost"
+  ],
+  "settings": [
+    "B1",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "M2",
+    "M3",
+    "S7"
+  ],
+  "surfaces": [
+    "turf",
+    "dirt"
+  ],
+  "matched_seeds": [
+    0,
+    1,
+    2
+  ],
+  "final_fit_count": 180,
+  "tuning": {
+    "tuned_seed": 0,
+    "candidates_per_family_setting_surface": 4,
+    "fit_count": 240,
+    "max_rounds": 1200,
+    "early_stopping_metric": "sklearn.metrics.average_precision_score",
+    "patience": 75,
+    "threads": 4,
+    "ap_tie_tolerance": 1e-06,
+    "tie_break": [
+      "higher_mean_hit_at_3",
+      "lower_best_round",
+      "lexicographic_candidate_id"
+    ],
+    "final_round_policy": "freeze_seed0_selected_round_for_seeds_0_1_2",
+    "candidates": {
+      "xgboost": {
+        "c0": {
+          "max_depth": 4,
+          "min_child_weight": 5,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_alpha": 0.0,
+          "reg_lambda": 5.0,
+          "learning_rate": 0.05
+        },
+        "c1": {
+          "max_depth": 6,
+          "min_child_weight": 10,
+          "subsample": 0.8,
+          "colsample_bytree": 0.8,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "learning_rate": 0.03
+        },
+        "c2": {
+          "max_depth": 8,
+          "min_child_weight": 20,
+          "subsample": 0.7,
+          "colsample_bytree": 0.7,
+          "reg_alpha": 0.5,
+          "reg_lambda": 20.0,
+          "learning_rate": 0.03
+        },
+        "c3": {
+          "max_depth": 3,
+          "min_child_weight": 1,
+          "subsample": 1.0,
+          "colsample_bytree": 1.0,
+          "reg_alpha": 1.0,
+          "reg_lambda": 20.0,
+          "learning_rate": 0.06
+        }
+      },
+      "lightgbm": {
+        "c0": {
+          "num_leaves": 15,
+          "max_depth": 5,
+          "min_child_samples": 50,
+          "subsample": 0.8,
+          "subsample_freq": 1,
+          "colsample_bytree": 0.8,
+          "reg_alpha": 0.0,
+          "reg_lambda": 5.0,
+          "learning_rate": 0.05
+        },
+        "c1": {
+          "num_leaves": 31,
+          "max_depth": 7,
+          "min_child_samples": 50,
+          "subsample": 0.8,
+          "subsample_freq": 1,
+          "colsample_bytree": 0.8,
+          "reg_alpha": 0.1,
+          "reg_lambda": 10.0,
+          "learning_rate": 0.03
+        },
+        "c2": {
+          "num_leaves": 63,
+          "max_depth": 9,
+          "min_child_samples": 100,
+          "subsample": 0.7,
+          "subsample_freq": 1,
+          "colsample_bytree": 0.7,
+          "reg_alpha": 0.5,
+          "reg_lambda": 20.0,
+          "learning_rate": 0.03
+        },
+        "c3": {
+          "num_leaves": 15,
+          "max_depth": 4,
+          "min_child_samples": 100,
+          "subsample": 1.0,
+          "subsample_freq": 0,
+          "colsample_bytree": 1.0,
+          "reg_alpha": 1.0,
+          "reg_lambda": 20.0,
+          "learning_rate": 0.06
+        }
+      },
+      "catboost": {
+        "c0": {
+          "depth": 5,
+          "l2_leaf_reg": 5.0,
+          "random_strength": 1.0,
+          "rsm": 0.8,
+          "learning_rate": 0.05
+        },
+        "c1": {
+          "depth": 6,
+          "l2_leaf_reg": 10.0,
+          "random_strength": 1.0,
+          "rsm": 0.8,
+          "learning_rate": 0.03
+        },
+        "c2": {
+          "depth": 7,
+          "l2_leaf_reg": 20.0,
+          "random_strength": 1.0,
+          "rsm": 0.7,
+          "learning_rate": 0.03
+        },
+        "c3": {
+          "depth": 4,
+          "l2_leaf_reg": 20.0,
+          "random_strength": 2.0,
+          "rsm": 1.0,
+          "learning_rate": 0.06
+        }
+      }
+    },
+    "shared": {
+      "max_rounds": 1200,
+      "threads": 4,
+      "objective": "binary",
+      "early_stopping_patience": 75,
+      "metric": "sklearn.metrics.average_precision_score"
+    }
+  },
+  "split": {
+    "train": "2010-2021",
+    "validation": "2022-2023",
+    "test": "2024-2025"
+  },
+  "refit": {
+    "train_plus_validation": false,
+    "fit_scope": "train_only"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "lightgbm": "4.6.0",
+    "xgboost": "3.0.2",
+    "catboost": "1.2.8",
+    "pin_policy": "exact_versions_recorded_in_setup_report"
+  },
+  "graph": {
+    "dimensions": 64,
+    "walks": 10,
+    "walk_length": 80,
+    "window": 5,
+    "epochs": 5,
+    "p": 1.0,
+    "q": 0.5,
+    "clusters": 64,
+    "workers": 4,
+    "scope": "training_root_three_generation_graph"
+  },
+  "categorical": {
+    "rare_min_train_rows": 5,
+    "unseen_token": "__UNK__",
+    "rare_token": "__RARE__",
+    "missing_token": "__MISSING__",
+    "external_target_encoding": false,
+    "catboost_native_ordered_statistics": true,
+    "xgboost": {
+      "enable_categorical": true,
+      "tree_method": "hist",
+      "max_cat_to_onehot": 32,
+      "max_cat_threshold": 64
+    },
+    "lightgbm": {
+      "categorical_feature": "native",
+      "cat_smooth": 20,
+      "cat_l2": 10,
+      "min_data_per_group": 20,
+      "max_cat_threshold": 64
+    },
+    "catboost": {
+      "one_hot_max_size": 32,
+      "max_ctr_complexity": 1,
+      "bootstrap_type": "Bayesian",
+      "bagging_temperature": 1
+    }
+  },
+  "threshold": {
+    "fitted_settings": "validation_grid_0.01_to_0.99_step_0.01_max_f1",
+    "b0": 0.5,
+    "top3_independent": true
+  },
+  "b0": {
+    "prevalence": "train_surface_positives_divided_by_train_surface_entries",
+    "rank_key": "sha256(b0-v1|race_id|horse_id|horse_number)[:16]"
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20260913,
+    "unit": "whole_race",
+    "primary_contrasts": [
+      "S6-S2",
+      "S6-S3",
+      "S6-S5",
+      "S7-M2",
+      "S7-M3",
+      "S7-S6"
+    ],
+    "multiplicity": "exhaustive_36_per_primary_metric_no_formal_p_values",
+    "temporal_sensitivity": "nonempty_ISO_calendar_week_blocks"
+  },
+  "subgroups": {
+    "history": [
+      "0",
+      "1",
+      "2",
+      "<3",
+      "3+"
+    ],
+    "coverage": [
+      "direct",
+      "ancestor_fallback",
+      "missing"
+    ],
+    "hit3": "original_full_race_selection_contribution_with_denominator_3_times_complete_races"
+  },
+  "shap": {
+    "selection": "highest_mean_validation_AP_across_seeds_per_surface_and_S6_or_S7",
+    "explanation_model": "selected_family_seed0_final_train_only_refit",
+    "sample_policy": "shuffle_complete_validation_races_until_at_least_2000_entries_and_record_ids",
+    "explanation_rows_minimum": 2000,
+    "seed": 20260913,
+    "model_output": "raw_margin",
+    "feature_perturbation": "tree_path_dependent",
+    "group_attribution": "mean_abs_sum_of_group_phi"
+  },
+  "lock": {
+    "test_performance_closed_until_manifest": true,
+    "no_test_retuning": true,
+    "no_test_seed_picking": true,
+    "no_train_validation_refit": true
+  }
+}

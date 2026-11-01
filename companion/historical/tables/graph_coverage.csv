@@ -1,0 +1,7 @@
+split,surface,entries,direct,parent,generation2,generation3,missing
+train,dirt,277207,277207,0,0,0,0
+train,turf,271549,271549,0,0,0,0
+validation,dirt,45323,24398,20683,242,0,0
+validation,turf,42783,21708,20872,202,1,0
+test,dirt,45660,5506,39107,1039,8,0
+test,turf,43477,5641,37225,596,15,0
