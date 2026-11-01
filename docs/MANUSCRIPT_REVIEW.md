@@ -1,5 +1,7 @@
 # Manuscript review, 1 November 2026
 
+Current update: **v1.0.4-paper** adds the user-approved workflow as Figure 1 on page 2. The paper now has six A4 pages. Existing result plots are Figures 2 and 3 on page 4; all tables and quantitative figure files are byte-identical to v1.0.3-paper. All six rendered pages were checked, with the availability statement together on page 6 and the reference columns rebalanced. See `WORKFLOW_FIGURE_CHECKS.json` for the current PDF hash and checks, and `WORKFLOW_FIGURE.md` for the approved asset and generation prompt. The reports below describe the earlier releases explicitly named in each paragraph.
+
 Release: **v1.0.2-paper**. The paper remains five A4 pages. This is a manuscript and released-artifact consistency audit, not a new training experiment or a full bootstrap replay.
 
 Author update: **v1.0.3-paper** adds the user-supplied Charis Berlian author block, department/school, Bina Nusantara University, Jakarta, Indonesia and email. All five pages were rendered and checked again; Figure 2 remains on page 4, both public links remain on page 5, and the reference columns were rebalanced. Scientific text and table/figure data are unchanged. See `AUTHOR_DETAILS_CHECKS.json` for the new PDF hash and verification; the 89-check report below describes v1.0.2-paper.

@@ -1,4 +1,6 @@
 \section{Methods}
+Fig.~\ref{fig:study_workflow} summarizes the focused four-arm workflow.
+\input{figures/study_workflow}
 \subsection{Cohort and Prediction Task}
 We use the original observed JRA flat-race cohort, with race results and pedigree records collected through Netkeiba \cite{netkeibaRace,netkeibaDb}. Eligible entries are divided by race date into 2010--2021 training, 2022--2023 validation and 2024--2025 test partitions, retaining complete race rosters (Table~\ref{tab:cohort}). The observed collection is not the entire JRA racing universe \cite{jraStats2yo,jraStats3up}. The binary label indicates an official top-three finish; documented non-finishers are negative, pre-start withdrawals are excluded, and all horses sharing a top-three position in a dead heat are positive. Models are fitted separately for turf and dirt. The test races had been inspected in earlier analyses, making this study exploratory rather than a fresh confirmatory test.
 

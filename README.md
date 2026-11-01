@@ -3,13 +3,13 @@
 Research data: [charischerw/jra-pedigree-graph-study-2010-2025](https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025) (paper release v1).
 Code and manuscript: [https://github.com/CharisBerlian/jra-pedigree-graph-study](https://github.com/CharisBerlian/jra-pedigree-graph-study).
 
-Current paper: [v1.0.3-paper](https://github.com/CharisBerlian/jra-pedigree-graph-study/releases/tag/v1.0.3-paper), five A4 pages, with the user-supplied Charis Berlian author block and Bina Nusantara University affiliation. Figure 2 is beside the historical results on page 4; references are in first-citation order. The [manuscript review](docs/MANUSCRIPT_REVIEW.md) and [author-update checks](docs/AUTHOR_DETAILS_CHECKS.json) record changes, verification and remaining boundaries.
+Current paper: [v1.0.4-paper](https://github.com/CharisBerlian/jra-pedigree-graph-study/releases/tag/v1.0.4-paper), six A4 pages, with the user-supplied Charis Berlian author block and Bina Nusantara University affiliation. The approved workflow is Figure 1 on page 2; focused and historical result plots are Figures 2 and 3 on page 4. The data/code links are together on page 6. References follow first-citation order. See the [workflow integration checks](docs/WORKFLOW_FIGURE_CHECKS.json), [figure asset and generation prompt](docs/WORKFLOW_FIGURE.md), and earlier [manuscript review](docs/MANUSCRIPT_REVIEW.md).
 
 This release contains the historical experiment and the October 2026 focused four-arm study. The fixed title is retained. The four-arm comparisons use H, Gmixed, Gancestor and P, with no market predictors. Historical market comparisons use retrospectively recorded final odds/popularity. The test cohort had previously been examined, so the new comparisons are exploratory.
 
 ## Contents
 
-- `paper/`: current five-page IEEE manuscript and its LaTeX sources, figures and licensed fonts.
+- `paper/`: current six-page IEEE manuscript and its LaTeX sources, figures and licensed fonts.
 - `docs/TABLE_LAYOUT_CHECKS.json`: numerical parity checks for the compact table layout in v1.0.1-paper.
 - `docs/MANUSCRIPT_REVIEW_CHECKS.json`: checks for all four tables, both figures, reported numerical claims, citation order and the v1.0.2-paper PDF.
 - `companion/focused/`: all 96 validation candidates, 24 selections, 72 test seed scores, 24 arm summaries and 36 AP/Hit@3 contrasts; frozen scientific source and synthetic fixtures.

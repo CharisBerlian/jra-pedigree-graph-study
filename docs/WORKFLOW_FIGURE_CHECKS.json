@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "paper_release": "v1.0.4-paper",
+  "pages": 6,
+  "approved_workflow_png_sha256": "5eab65b831d2c2cae19f6a47a2fdc4a504095ecbdd37ac57bf658e004b69f9aa",
+  "approved_workflow_png_pixels": [
+    1536,
+    1024
+  ],
+  "approved_image_embedded_pixel_identically": true,
+  "workflow_figure_number_and_page": [
+    1,
+    2
+  ],
+  "focused_result_figure_number_and_page": [
+    2,
+    4
+  ],
+  "historical_result_figure_number_and_page": [
+    3,
+    4
+  ],
+  "existing_table_and_plot_files_byte_unchanged": true,
+  "other_existing_paper_files_byte_unchanged": 18,
+  "scientific_text_changes": "Added the workflow callout and caption only; existing methods/results preserved.",
+  "all_18_citation_bindings_preserved": true,
+  "no_overfull_boxes_unresolved_references_missing_glyphs_or_latex_warnings": true,
+  "all_fonts_embedded": true,
+  "all_six_pages_rendered_and_visually_checked": true,
+  "data_and_code_availability_kept_together_on_page": 6,
+  "author_affiliation_and_email_preserved": true,
+  "workflow_source": "User-approved built-in imagegen preview, copied without pixel changes.",
+  "pdf_sha256": "ac08f30a2a0599c50ef186df4ac965283b0d04301533c6bce1f7815a183057dd"
+}
