@@ -3,13 +3,13 @@
 Research data: [charischerw/jra-pedigree-graph-study-2010-2025](https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025) (paper release v1).
 Code and manuscript: [https://github.com/CharisBerlian/jra-pedigree-graph-study](https://github.com/CharisBerlian/jra-pedigree-graph-study).
 
-Current paper: [v1.0.4-paper](https://github.com/CharisBerlian/jra-pedigree-graph-study/releases/tag/v1.0.4-paper), six A4 pages, with the user-supplied Charis Berlian author block and Bina Nusantara University affiliation. The approved workflow is Figure 1 on page 2; focused and historical result plots are Figures 2 and 3 on page 4. The data/code links are together on page 6. References follow first-citation order. See the [workflow integration checks](docs/WORKFLOW_FIGURE_CHECKS.json), [figure asset and generation prompt](docs/WORKFLOW_FIGURE.md), and earlier [manuscript review](docs/MANUSCRIPT_REVIEW.md).
+Current paper: [v1.0.5-paper](https://github.com/CharisBerlian/jra-pedigree-graph-study/releases/tag/v1.0.5-paper), five A4 pages, with the user-supplied Charis Berlian author block and Bina Nusantara University affiliation. Figure 1 fits entirely in the left column on page 2, using native vector lines and 8-point main labels. The focused and historical result plots are Figures 2 and 3 on pages 3 and 4. Both public data/code links appear on page 5. References follow first-citation order. See the [single-column layout checks](docs/SINGLE_COLUMN_WORKFLOW_CHECKS.json), [workflow source and preview provenance](docs/WORKFLOW_FIGURE.md), and [manuscript review](docs/MANUSCRIPT_REVIEW.md).
 
 This release contains the historical experiment and the October 2026 focused four-arm study. The fixed title is retained. The four-arm comparisons use H, Gmixed, Gancestor and P, with no market predictors. Historical market comparisons use retrospectively recorded final odds/popularity. The test cohort had previously been examined, so the new comparisons are exploratory.
 
 ## Contents
 
-- `paper/`: current six-page IEEE manuscript and its LaTeX sources, figures and licensed fonts.
+- `paper/`: current five-page IEEE manuscript and its LaTeX sources, figures and licensed fonts.
 - `docs/TABLE_LAYOUT_CHECKS.json`: numerical parity checks for the compact table layout in v1.0.1-paper.
 - `docs/MANUSCRIPT_REVIEW_CHECKS.json`: checks for all four tables, both figures, reported numerical claims, citation order and the v1.0.2-paper PDF.
 - `companion/focused/`: all 96 validation candidates, 24 selections, 72 test seed scores, 24 arm summaries and 36 AP/Hit@3 contrasts; frozen scientific source and synthetic fixtures.
@@ -34,7 +34,7 @@ To regenerate the focused manuscript table and figure from the released aggregat
 python -B generate_focused_ieee.py --report ../test/evaluation_report.json --seed-metrics ../test/seed_metrics.csv --arm-metrics ../test/arm_metrics.csv --contrasts ../test/contrasts.csv --out ../../../../regenerated-focused
 ```
 
-To regenerate the current column-width historical Figure 2, run from the repository root:
+To regenerate the current column-width historical Figure 3, run from the repository root:
 
 ```sh
 python -B companion/focused/reporting/render_historical_contrasts.py --source companion/historical/tables/primary_contrasts.csv --out regenerated-historical-figure.tex

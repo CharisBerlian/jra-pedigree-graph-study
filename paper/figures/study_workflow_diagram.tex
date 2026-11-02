@@ -1,0 +1,41 @@
+% Column-width vector reflow of the approved workflow.
+% All text is native, embedded PDF text at the document's footnote size.
+\begin{tikzpicture}[x=1pt,y=1pt,
+  every node/.style={font=\footnotesize,inner sep=3pt,align=center},
+  process/.style={draw=black!80,line width=0.45pt,fill=blue!7,text width=210pt},
+  arm/.style={draw=black!80,line width=0.45pt,fill=teal!10,text width=210pt},
+  flow/.style={draw=black!80,line width=0.55pt,-{Latex[length=3pt,width=2.5pt]}}]
+\useasboundingbox (0,-182) rectangle (244,8);
+
+\node[process,minimum height=14pt] (data) at (122,0)
+  {\textbf{JRA race and pedigree records}};
+\node[process,minimum height=24pt] (split) at (122,-24)
+  {\textbf{Chronological partitions}\\Train: 2010--21; Val.: 2022--23; Test: 2024--25};
+\draw[flow] (data.south) -- (split.north);
+
+\node[font=\footnotesize\bfseries,inner sep=0pt] at (122,-46)
+  {Four independent pipelines (predictors)};
+\node[arm,minimum height=14pt] (h) at (122,-60)
+  {\textbf{H} (43): Context + recent history};
+\node[arm,minimum height=14pt] (mixed) at (122,-76)
+  {$\boldsymbol{G_{\mathrm{mixed}}}$ (112): H + direct/fallback graph};
+\node[arm,minimum height=14pt] (ancestor) at (122,-92)
+  {$\boldsymbol{G_{\mathrm{ancestor}}}$ (112): H + ancestor-rule graph};
+\node[arm,minimum height=14pt] (parent) at (122,-108)
+  {\textbf{P} (52): H + prior parent performance};
+
+% Separate input branches: no arm feeds another arm.
+\draw[draw=black!80,line width=0.55pt] (split.west) -- (3,-24) -- (3,-108);
+\foreach \branch in {h,mixed,ancestor,parent} {
+  \draw[flow] (3,0 |- \branch.west) -- (\branch.west);
+  \draw[flow] (\branch.east) -- (241,0 |- \branch.east);
+}
+% The right rail routes four separate fits, not feature concatenation.
+\draw[draw=black!80,line width=0.55pt] (241,-60) -- (241,-120) -- (122,-120);
+\node[process,minimum height=24pt] (fit) at (122,-138)
+  {\textbf{XGBoost $\cdot$ LightGBM $\cdot$ CatBoost}\\Validation tuning; separate train-only refits};
+\draw[flow] (122,-120) -- (fit.north);
+\node[process,minimum height=24pt] (evaluation) at (122,-168)
+  {\textbf{Test: three paired seeds; turf and dirt}\\AP, Hit@3; paired whole-race bootstrap intervals};
+\draw[flow] (fit.south) -- (evaluation.north);
+\end{tikzpicture}

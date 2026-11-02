@@ -1,4 +1,12 @@
-# Approved workflow figure
+# Workflow figure
+
+Current release: **v1.0.5-paper**, corrected on 2 November 2026. Figure 1 is entirely within one column on page 2. It uses [native vector source](../paper/figures/study_workflow_diagram.tex) and the [single-column wrapper and caption](../paper/figures/study_workflow.tex). Main labels are 8-point text; math subscripts are smaller. The four feature arms have independent input/output branches and are fitted separately. The paper has five pages. Existing numerical tables and result plots are unchanged.
+
+All five pages were rendered and visually checked. The diagram extends to x=271.987 PDF points, within the left-column boundary at x=291.64. See [SINGLE_COLUMN_WORKFLOW_CHECKS.json](SINGLE_COLUMN_WORKFLOW_CHECKS.json) for the current PDF hash and audit.
+
+## Prior wide preview and v1.0.4 integration
+
+The following record describes the earlier six-page release. Its approved raster is retained as provenance; the current PDF uses the vector source above.
 
 Release: v1.0.4-paper. The user approved the landscape preview and requested its insertion into the manuscript.
 
@@ -9,7 +17,7 @@ Release: v1.0.4-paper. The user approved the landscape preview and requested its
 - Integration: Figure 1 on page 2, spanning both columns. Existing AP figures are now Figures 2 and 3. The six-page PDF embeds the approved pixels without alteration. Scientific table/plot data are unchanged.
 - Verification: [WORKFLOW_FIGURE_CHECKS.json](WORKFLOW_FIGURE_CHECKS.json).
 
-## Final generation prompt
+## Original preview generation prompt
 
 ```text
 Use case: scientific-educational. Create a new high-resolution academic workflow diagram on white, landscape 3:2 composition, crisp flat vector-like linework, Times New Roman-like serif text, thin black outlines, pale blue process boxes and pale teal feature boxes. No illustrations, texture, shadows, figure numbers or outer caption. This is a preview for an IEEE research paper.

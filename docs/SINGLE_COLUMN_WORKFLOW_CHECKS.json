@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "paper_release": "v1.0.5-paper",
+  "pages": 5,
+  "workflow_number_and_page": [
+    1,
+    2
+  ],
+  "workflow_single_column": true,
+  "workflow_format": "Native vector lines and embedded text; approved raster retained only as a prior preview.",
+  "workflow_colored_box_bounds_pdf_points": [
+    56.791,
+    51.628,
+    271.987,
+    237.932
+  ],
+  "left_column_right_boundary_pdf_points": 291.64,
+  "workflow_text_sizes_pdf_points": [
+    5.98,
+    7.97
+  ],
+  "main_workflow_labels_nominal_tex_points": 8,
+  "four_independent_input_output_branches": true,
+  "all_five_pages_rendered_and_visually_checked": true,
+  "table_and_quantitative_figure_files_byte_unchanged": true,
+  "unchanged_existing_paper_files": 19,
+  "editorial_tightening": "Two Methods paragraphs shortened; all numeric settings, citations, cohort rules and graph-timing caveats retained.",
+  "methods_numeric_tokens_and_citations_preserved": true,
+  "results_and_availability_text_preserved_except_release_identifier": true,
+  "author_and_public_data_code_links_preserved": true,
+  "all_18_citation_bindings_preserved": true,
+  "no_overfull_boxes_undefined_references_or_missing_glyphs": true,
+  "expected_layout_notice": "Page 4 right column contains only the historical plot; no overflow.",
+  "all_fonts_embedded": true,
+  "pdf_sha256": "afa50cf9a9f39f651b749059ad99fdf63016f16110f328536ed81e42f796fcc4"
+}

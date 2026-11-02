@@ -6,13 +6,13 @@
   "all_72_ap_and_hit_at_3_point_scores": "PASS",
   "point_check_runtime": "Python 3.12.14; NumPy 1.26.4; pandas 2.2.3; scikit-learn 1.6.1",
   "full_training_rerun": false,
-  "paper_pages": 6,
-  "paper_visual_review": "all six pages checked after inserting the approved workflow, renumbering figures and balancing references",
-  "current_paper_release": "v1.0.4-paper",
+  "paper_pages": 5,
+  "paper_visual_review": "all five pages rendered and checked; Figure 1 entirely within the left column on page 2, with readable native vector labels",
+  "current_paper_release": "v1.0.5-paper",
   "workflow_figure_checks": "docs/WORKFLOW_FIGURE_CHECKS.json",
   "author_details_checks": "docs/AUTHOR_DETAILS_CHECKS.json",
   "manuscript_review": "docs/MANUSCRIPT_REVIEW_CHECKS.json",
-  "expected_latex_notice": null,
+  "expected_latex_notice": "Page 4 right column contains only the historical plot; no overflow.",
   "kaggle_notebook_version": 2,
   "kaggle_notebook_remote_status": "COMPLETE",
   "kaggle_notebook_remote_point_scores": "PASS: all 72 AP and Hit@3 scores match",
@@ -27,5 +27,6 @@
   "dataset_version": 1,
   "data_license": "CC-BY-4.0",
   "code_license": "MIT",
-  "canonical_manuscript_updated": true
+  "canonical_manuscript_updated": true,
+  "single_column_workflow_checks": "docs/SINGLE_COLUMN_WORKFLOW_CHECKS.json"
 }

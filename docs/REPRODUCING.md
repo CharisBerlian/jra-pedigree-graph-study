@@ -1,8 +1,10 @@
 # Reproduction and scope
 
-Current paper release: v1.0.4-paper, 1 November 2026, six A4 pages. Data: https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025 (version 1). The original exact replay packet remains attached to v1.0.0-paper.
+Current paper release: v1.0.5-paper, 2 November 2026, five A4 pages. Data: https://www.kaggle.com/datasets/charischerw/jra-pedigree-graph-study-2010-2025 (version 1). The original exact replay packet remains attached to v1.0.0-paper.
 
 Compile the manuscript from a clean source copy with XeLaTeX twice, so citation bindings are regenerated without stale auxiliary files from an earlier release.
+
+The single-column workflow is compiled from `paper/figures/study_workflow_diagram.tex` through `study_workflow.tex`. Its labels are native embedded text. The earlier `study_workflow.png` is retained as the approved wide preview and is no longer included in the PDF. The numerical tables and result plots retain their frozen sources.
 
 1. Aggregate reporting: regenerate tables and plots from `companion/` using the README commands.
 2. Synthetic implementation checks: run both fixture scripts. These are fabricated examples, separate from the real data.
